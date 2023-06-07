@@ -44,4 +44,4 @@ http://localhost:3000
 
 ### Conclusion: 
 
-The **HR   Management** Web App provides a powerful and intuitive solution for managing various HR tasks. We hope this *README* file has provided you with the necessary information to set up.
+The **HR   Management** Web App provides a powerful and intuitive solution for managing various HR tasks. We hope this *README.md* file has provided you with the necessary information to set up.
