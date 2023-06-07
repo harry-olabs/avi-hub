@@ -19,22 +19,29 @@ To run the **HR Management** Web App, ensure your system meets the following req
 Follow the steps below to setup the project locally:
 
 * clone the repository: 
+```
 git clone https://github.com/harry-olabs/avi-hub.git
-* Navigate to the project directory: 
-cd hr-management-web-app
+```
+
+* Navigate to the project directory:
+ ``` 
+cd avi-hub
+```
 
 ## Install dependencies using npm 
-
-* *npm* install or *yarn* install
+```
+npm install
+```
 
 ## Start the development server:
 
-*npm* start
-*yarn* start
+ ```
+ npm start
+ ``` 
 
 Access the app in your browser: 
 http://localhost:3000
 
 ### Conclusion: 
 
-The **HR   Management** Web App provides a powerful and intuitive solution for managing various HR tasks. We hope this *README* file has provided you with the necessary information to set up.
+The **HR   Management** Web App provides a powerful and intuitive solution for managing various HR tasks. We hope this *README.md* file has provided you with the necessary information to set up.
