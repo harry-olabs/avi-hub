@@ -19,18 +19,23 @@ To run the **HR Management** Web App, ensure your system meets the following req
 Follow the steps below to setup the project locally:
 
 * clone the repository: 
-git clone ```https://github.com/harry-olabs/avi-hub.git```
+```
+git clone https://github.com/harry-olabs/avi-hub.git
+```
 
 * Navigate to the project directory: 
 cd hr-management-web-app
 
 ## Install dependencies using npm 
-
-* ```npm install```
+```
+npm install
+```
 
 ## Start the development server:
 
-```npm start``` 
+ ```
+ npm start
+ ``` 
 
 Access the app in your browser: 
 http://localhost:3000
