@@ -23,8 +23,10 @@ Follow the steps below to setup the project locally:
 git clone https://github.com/harry-olabs/avi-hub.git
 ```
 
-* Navigate to the project directory: 
-cd hr-management-web-app
+* Navigate to the project directory:
+ ``` 
+cd avi-hub
+```
 
 ## Install dependencies using npm 
 ```
