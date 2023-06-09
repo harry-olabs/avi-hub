@@ -25,37 +25,38 @@ body {
   transform: scale(1);
 }
 
-.logo {
+.container__logo {
   text-align: center;
   margin-bottom: 20px;
 }
 
-.logo img {
+.container__logo img {
   max-width: 150px;
   height: auto;
   display: block;
   margin: 0 auto;
 }
-.container h1 {
+
+.container__title {
   text-align: center;
   margin-bottom: 30px;
   color: #4CAF50;
   font-size: 32px;
 }
 
-.form-group {
+.form__group {
   margin-bottom: 20px;
 }
 
-.form-group label {
+.form__label {
   display: block;
   font-weight: bold;
   color: #333;
   margin-bottom: 5px;
 }
 
-.form-group input[type="email"],
-.form-group input[type="password"] {
+.form__input[type="email"],
+.form__input[type="password"] {
   width: 100%;
   padding: 12px;
   border-radius: 5px;
@@ -64,12 +65,12 @@ body {
   transition: background-color 0.3s ease;
 }
 
-.form-group input[type="email"]:hover,
-.form-group input[type="password"]:hover {
+.form__input[type="email"]:hover,
+.form__input[type="password"]:hover {
   background-color: #e0e0e0;
 }
 
-.form-group input[type="submit"] {
+.form__submit {
   background-color: #4CAF50;
   color: #fff;
   cursor: pointer;
@@ -81,7 +82,7 @@ body {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.form-group input[type="submit"]:hover {
+.form__submit:hover {
   background-color: #45a049;
 }
 
@@ -90,7 +91,7 @@ body {
   margin-top: 20px;
 }
 
-.register-link a {
+.register-link__anchor {
   color: #333;
   text-decoration: none;
 }
