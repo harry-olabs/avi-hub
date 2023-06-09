@@ -14,9 +14,7 @@ body {
   .container {
     max-width: 400px;
     background-color: #fff;
-    padding: 0 60px;
     padding: 60px;
-    border-radius: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transform: scale(0.9);
@@ -27,6 +25,17 @@ body {
     transform: scale(1);
   }
   
+  .logo {
+    text-align: center;
+    margin-bottom: 65px;
+  }
+  
+  .logo img {
+    max-width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
   h1 {
     text-align: center;
     margin-bottom: 30px;
@@ -42,6 +51,7 @@ body {
     display: block;
     font-weight: bold;
     color: #333;
+    margin-bottom: 5px;
   }
   
   .form-group input[type="email"],
@@ -73,26 +83,4 @@ body {
   
   .form-group input[type="submit"]:hover {
     background-color: #45a049;
-  }
-  
-  .logo {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .logo img {
-    max-width: 150px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-  }
-
-  .register-link {
-    text-align: center;
-    margin-top: 20px;
-  }
-
-  .register-link a {
-    color: #333;
-    text-decoration: none;
   }
