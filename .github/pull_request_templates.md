@@ -1,5 +1,5 @@
 ## What does this PR do
-This PR is basically for the template of the dashboard using only html and css
+This PR is basically for the template dashboard using only html and css
 
 ### screenshots
 This is how the template dashboard looks like
