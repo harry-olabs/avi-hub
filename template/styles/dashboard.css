@@ -107,7 +107,13 @@ body, html{
   object-fit: cover;  
   border:1px solid red;
 }
-
+.sidebar__container{
+  display: flex; flex-direction: column;justify-content: center;
+  margin-left:10px;
+}
+.sidebar__container h4{
+  margin-bottom: -10px;
+}
 .sidebar__menu {
   list-style-type: none;
   padding: 0;
@@ -123,7 +129,7 @@ body, html{
   cursor: pointer;
   transition: background-color 0.3s;
   position: relative;
-  margin-left: -40px;
+  margin-left: -15px;
 }
 
 
@@ -138,7 +144,7 @@ body, html{
   background-color: white;
   position: absolute;
   left: 0;
-  margin-left: 4px;
+  margin-left: 20px;
 }
 
 .sidebar__item:hover {
