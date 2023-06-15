@@ -1,6 +1,7 @@
 *{
   padding:0;
   margin:0;
+  box-sizing: border-box;
 }
 
 body{
@@ -61,7 +62,6 @@ body, html{
 .navbar__left-logo img{
   width:35px;
   height: 35px;
-  padding:0px 10px;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -89,7 +89,7 @@ body, html{
   height: 100vh;
   display: flex;
   flex-direction: column;
-  margin-top: -30px;
+  margin-top: -35px;
   width: 250px;
   padding-left: 10px;
   background-color: white;
@@ -149,12 +149,13 @@ body, html{
 }
 
 .sidebar__item {
-  padding: 14px 10px;
+  padding: 14px 1px;
   display: flex;
   cursor: pointer;
   transition: background-color 0.3s;
+  font-size:15px;
   position: relative;
-  margin-left: -15px;
+  margin-left: -5px;
 }
 
 .sidebar__item:hover::before {
@@ -167,8 +168,8 @@ body, html{
   margin-top:-6px;
   background-color: white;
   position: absolute;
-  left: 0;
-  margin-left: 20px;
+  left: 5px;
+  /* margin-left: 20px; */
 }
 
 .sidebar__item:hover {
@@ -280,11 +281,16 @@ body, html{
 
 .card-item1-first-both i{
   background-color: #d15267;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding:20px;
   width:20px;
 }
 
 .card-item1-first-both h5{
-  margin-top:16px;
+  margin-top:15px;
 }
 
 .card-items-number{
@@ -320,9 +326,6 @@ margin-top:-10px;
  margin-right:10px;
 }
 
-.item2{
-  background-color: greenyellow;
-}
 
 .item3{
   margin-top:-10px;
@@ -359,7 +362,7 @@ margin-top:-10px;
   z-index: 0;
   background-color: rgb(226, 220, 220);
   border-radius: 10px;
-  padding:20px 40px;
+  padding:20px 5px;
   width:160px;
 }
 
