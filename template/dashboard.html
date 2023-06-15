@@ -4,10 +4,124 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/dashboard.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-********" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Roboto&display=swap" rel="stylesheet">
+
     <title>Document</title>
-    <link rel="stylesheet" href="dashboard.css">
 </head>
 <body>
-    
+    <nav class="navbar">
+        <div class="navbar__left">
+            <div class="navbar__left-logo">
+                <img src="images/sniper.png" alt="logo">
+            </div>
+            <div class="navbar__text">
+                <p>AVI-HUB</p>
+            </div>
+        </div>
+        <div class="navbar__right">
+            <img src="images/head.jpg" alt="User Image">
+        </div>
+    </nav>
+    <div class="container">
+        <div class="sidebar">
+            <div class="sidebar__card">
+                <img src="images/head.jpg" alt="logo">
+                <div class="sidebar__container">
+                  <h4>John Doe</h4> 
+                  <p>Architect & Engineer</p> 
+                </div>
+            </div>
+            <ul class="sidebar__menu">
+                <li class="sidebar__item sidebar__menu-active">
+                    <i class="sidebar__icon fas fa-tachometer-alt"></i>
+                    <span class="sidebar__text">Dashboard</span>
+                </li>
+                <li class="sidebar__item">
+                    <i class="sidebar__icon fas fa-user"></i>
+                    <span class="sidebar__text">Employees</span>
+                </li>
+                <li class="sidebar__item">
+                    <i class="sidebar__icon fas fa-user-circle"></i>
+                    <span class="sidebar__text">Employee profile</span>
+                </li>
+                <li class="sidebar__item">
+                    <i class="sidebar__icon fas fa-id-badge"></i>
+                    <span class="sidebar__text">My profile</span>
+                </li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="cards">
+                <div class="card item1">
+                    <div class="card-item1-first">
+                        <div class="card-item1-first-items">
+                            <div class="card-item1-first-both">
+                                <i class="fas fa-users"></i>
+                                <h5>Employees</h5>
+                            </div>
+                        </div>
+                        <div class="card-item1-number">
+                            <h3>700</h3>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Employee Structure</h3> 
+                        <div class="card-items-number">
+                            <div class="card-items-number-column">
+                                <h2>70%</h2>
+                                <h4>Male</h4>
+                            </div>
+                            <div class="card-items-number-column">
+                                <h2>30%</h2>
+                                <h4>Female</h4>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <div class="card item1">
+                    <div class="card-item1-first">
+                        <div class="card-item1-first-items">
+                            <div class="card-item1-first-both">
+                                <i class="fas fa-user-plus"></i>
+                                <h5>New Employees</h5>
+                            </div>
+                        </div>
+                        <div class="card-item1-number">
+                            <h3>30</h3>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Today</h3> 
+                        <div class="card-items-number">
+                            <div class="card-items-number-column">
+                                <h2>70%</h2>
+                                <h4>Male</h4>
+                            </div>
+                            <div class="card-items-number-column">
+                                <h2>30%</h2>
+                                <h4>Female</h4>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <div class="card item3">
+                    <div class="item3-container">
+                        <img src="images/head.jpg" alt="Avatar">
+                        <div class="item3-content">
+                            <h3>Welcome, John</h3> 
+                            <p>Thurs, 13 June 2023 </p> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
+
+
