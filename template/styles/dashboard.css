@@ -1,6 +1,7 @@
 *{
   padding:0;
   margin:0;
+  outline: 1px dashed red;
   box-sizing: border-box;
 }
 
@@ -35,15 +36,15 @@ body, html{
 
 .navbar__left {
   display: flex;
-  margin-left: px;
 }
+
 .navbar__text{
   display: flex;
   justify-content: center;
   align-items: center;
   color: black;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .navbar__menu {
@@ -57,8 +58,8 @@ body, html{
   width:40px; 
   height:40px;
   margin-right: 10px;
-
 }
+
 .navbar__left-logo img{
   width:35px;
   height: 35px;
@@ -67,15 +68,16 @@ body, html{
   align-items: center;
   justify-content: center;
 }
+
 .navbar__right{
-  padding:10px 30px;
-  
+  padding:10px 0px;
 }
+
 .navbar__right img {
   display: flex;
   align-items: center;
-  height:50px;
-  width: 50px;
+  height:40px;
+  width: 40px;
   object-fit: cover;
   border: 1px solid red;
   border-radius: 10px;
@@ -85,12 +87,11 @@ body, html{
 .sidebar {
   position: fixed;
   left: 0;
-  top: 100px;
-  height: 100vh;
+  top: 60px;
+  bottom:0;
   display: flex;
   flex-direction: column;
-  margin-top: -35px;
-  width: 250px;
+  width: 270px;
   padding-left: 10px;
   background-color: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -102,15 +103,13 @@ body, html{
 
 .sidebar__card{
   background-color: white;
-  height: 60px;
-  margin-top: 10px;
+  padding:10px;
   border-radius:10px;
+  display: flex;
   margin-bottom:10px;
-  width:90%;
+  width:97%;
   display: flex;
   margin-top:20px;
-  padding-left:10px;
-  /* justify-content: center; */
   align-items: center;
   cursor: pointer;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -125,7 +124,7 @@ body, html{
 }
 
 .sidebar__container p{
-  font-size: 14px;
+  font-size: 15px;
   color: grey;
 }
 
@@ -134,7 +133,6 @@ body, html{
   flex-direction: column;
   justify-content: center;
   margin-left:10px;
- 
 }
 
 .sidebar__container h4{
@@ -144,20 +142,26 @@ body, html{
 .sidebar__menu {
   list-style-type: none;
   padding: 0;
-  margin-top: px;
-  margin-left:20px;
+  margin-top: 20px;
 }
 
 .sidebar__item {
-  padding: 14px 1px;
+  padding: 14px 10px;
+  margin:3px 0px;
   display: flex;
   cursor: pointer;
   transition: background-color 0.3s;
   font-size:15px;
   position: relative;
-  margin-left: -5px;
+  align-items: center;
 }
 
+.sidebar__menu-active{
+  background-color: #d15267;
+  color: white;
+}
+
+.sidebar__menu-active::before,
 .sidebar__item:hover::before {
   content: "";
   width: 4px;
@@ -165,11 +169,9 @@ body, html{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top:-6px;
   background-color: white;
   position: absolute;
   left: 5px;
-  /* margin-left: 20px; */
 }
 
 .sidebar__item:hover {
@@ -177,18 +179,14 @@ body, html{
   color: white;
 }
 
-.sidebar__text{
-  padding-left: 10px;
-}
-
 .sidebar__icon{
   color: #d15267;
-  margin-right: 10px;
-  padding-left: 30px;
   transition: color 0.3s;
-  padding-left: 16px;
-  padding-right:16px;
-  margin-left:13px;
+  padding: 0px 16px;
+}
+
+.sidebar__menu-active .sidebar__icon{
+  color: white;
 }
 
 .sidebar__icon:hover{
@@ -209,10 +207,18 @@ body, html{
 
 .main{
   width: 100%;
-  margin-left:250px;
-  margin-top:80px;
-  padding: 20px;
-  height:500px;
+  margin-left:270px;
+  margin-top:65px;
+  padding: 16px;
+  height:100vh;
+}
+
+.card-item1-first:hover{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card-content:hover{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 .cards{
@@ -228,9 +234,12 @@ body, html{
   border-radius:5px;
   padding:16px;
   align-items: center;
-  height:80px;
   margin-bottom: 16px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.card-item1-first h5{
+  font-weight: 500px;
 }
 
 .fa-users{
@@ -254,8 +263,7 @@ body, html{
 .card-content{
   background-color: white;
   border-radius:5px;
-  height:310px;
-  padding:15px;
+  padding:16px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
@@ -263,6 +271,7 @@ body, html{
   margin-top:-3px;
   cursor: pointer;
   font-size: 1.2rem;
+  font-weight: 500;
 }
 
 .card-item1-first-items{
@@ -306,6 +315,7 @@ body, html{
 
 .card-item1-number{
   font-size: 30px;
+  font-weight:500;
 }
 
 .card-items-number-column{
@@ -314,21 +324,15 @@ body, html{
 }
 
 .card-items-number-column h2{
-  font-size: 24px;
+  font-size: 30px;
+  font-weight:500;
 }
 
 .item1{
  display: flex;
  flex-direction: column;
-margin-top:-10px;
  width: 100%;
- height:500px;
  margin-right:10px;
-}
-
-
-.item3{
-  margin-top:-10px;
 }
 
 .item3-container{
@@ -338,15 +342,18 @@ margin-top:-10px;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding:10px 20px;
+  padding:16px 10px;
   border-radius: 5px;
-  padding-bottom:20px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
+.item3-container:hover{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
 .item3-container img{
-  width:50px;
-  height:50px;
+  width:70px;
+  height:70px;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -354,20 +361,22 @@ margin-top:-10px;
   object-fit: cover;
   border-radius: 50%;
   border: 2px solid rgb(230, 88, 111);
+  margin-top:0px;
   z-index: 1;
 }
 
 .item3-content{
-  margin-top:-20px;
+  margin-top:-30px;
   z-index: 0;
   background-color: rgb(226, 220, 220);
   border-radius: 10px;
   padding:20px 5px;
-  width:160px;
+  width:240px;
 }
 
 .item3-content h3{
-  margin-bottom:-4px;
+ font-weight: 600;
+ margin-top:10px;
 }
 
 .item3-content p{
