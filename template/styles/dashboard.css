@@ -6,12 +6,6 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-  background-color: #f9fff9;
-}
-
-body,
-html {
-  background-color: rgb(248, 244, 244);
 }
 
 .text-normal {
@@ -131,6 +125,13 @@ html {
 .sidebar__container p {
   font-size: 15px;
   color: grey;
+}
+.sidebar__item{
+  text-decoration: none;
+  color: black
+}
+.sidebar__menu-active{
+  color: white;
 }
 
 .sidebar__container {
