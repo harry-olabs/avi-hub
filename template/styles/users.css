@@ -4,30 +4,32 @@
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
 }
-ul li{
+ul li {
   list-style: none;
 }
 
-/* Styles for Employee Management page */
 html {
   height: 100%;
 }
 
-body {
-  height: 100%;
-  font-family: 'Montserrat', sans-serif;
-  background: rgb(226, 224, 224)
+hr{
+  font-weight:400;
 }
 
-.employee-management{
+body {
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+  background: rgb(226, 224, 224);
+}
 
+.employee-management {
   margin: 0 auto;
   padding: 20px;
   background-color: #ffffff;
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
 }
-.employee-management:hover{
+.employee-management:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -36,37 +38,35 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding:2px 4px;
+  padding: 2px 4px;
 }
-.employee-management__search{
+.employee-management__search {
   display: flex;
   align-items: center;
 
   flex-direction: row;
 }
 
-.fa-light{
- 
+.fa-light {
   color: black;
   background-color: blue;
-  
 }
 
-.employee-management-add{
+.employee-management-add {
   background-color: transparent;
   /* float: right; */
-  padding:0px 3px;
+  padding: 0px 3px;
   border-radius: 3px;
-  color:white;
+  color: white;
   height: 50px;
   margin-top: -6px;
   margin-bottom: 5px;
 }
 
-.add{
+.add {
   background-color: rgb(23, 158, 185);
   border: none;
-  padding:5px 3px;
+  padding: 5px 3px;
   border-radius: 3px;
   max-width: 70px;
   float: right;
@@ -78,8 +78,8 @@ body {
   margin-top: 10px;
 }
 
-.add span{
-  padding:0 4px;
+.add span {
+  padding: 0 4px;
 }
 
 .employee-management__title {
@@ -102,7 +102,7 @@ body {
   border-radius: 4px;
   font-size: 14px;
   margin-right: 10px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .employee-management__search-button {
@@ -114,7 +114,7 @@ body {
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .employee-management__search-button:hover {
@@ -138,7 +138,7 @@ body {
 }
 
 .employee-management__row:nth-child(even) {
-  background: #eee;
+  background: #e8e9e9;
 }
 
 .employee-management__row {
@@ -199,37 +199,51 @@ body {
   overflow: hidden;
 }
 
-.employee-management__role-super{
-  background-color: green;
-  width:130px;
+.employee-management__role-super {
+  background-color: #e8769f;
+  width: 130px;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding:3px 3px;
+  padding: 3px 3px;
   color: white;
   border-radius: 3px;
   font-size: 14px;
 }
-.employee-management__role-employee{
-  background-color: purple;
-  width:100px;
+
+.employee-management__role-employee {
+  background-color: #6e7687;
+  width: 100px;
   justify-content: center;
   align-items: center;
   text-align: center;
   color: white;
-  padding:3px 3px;
-  border-radius:3px;
+  padding: 3px 3px;
+  border-radius: 3px;
   font-size: 14px;
 }
-.employee-management__role-admin{
-  background-color: blue;
-  width:80px;
+
+.employee-management__role-hr {
+  background-color: #cedd7a;
+  width: 60px;
   justify-content: center;
   align-items: center;
   text-align: center;
   color: white;
-  padding:3px 3px;
-  border-radius:3px;
+  padding: 3px 3px;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+.employee-management__role-admin {
+  background-color: #5a5278;
+  width: 80px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 3px 3px;
+  border-radius: 3px;
   font-size: 14px;
 }
 
@@ -253,8 +267,7 @@ body {
   color: #888888;
 }
 
-.employee-management__action-container{
-  display:flex;
+.employee-management__action-container {
+  display: flex;
   flex-direction: row;
-  /* justify-content: center; */
 }

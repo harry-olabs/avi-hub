@@ -9,7 +9,9 @@ body {
   background-color: #f9fff9;
 }
 
-
+th{
+  font-weight: 400;
+}
 .text-normal {
   font-weight: normal;
 }
