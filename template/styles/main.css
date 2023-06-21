@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+  }
+  ul li{
+    list-style: none;
+  }
+  
+  html {
+    height: 100%;
+  }
+  
+  body {
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .fa{
+    padding:0 6px;
+  }
+  th{
+    font-weight:400;
+  }

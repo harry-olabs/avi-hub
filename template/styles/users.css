@@ -2,6 +2,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+ul li{
+  list-style: none;
 }
 
 /* Styles for Employee Management page */
@@ -16,13 +20,15 @@ body {
 }
 
 .employee-management{
-  max-width: 1100px;
+
   margin: 0 auto;
-  height: 100%;
   padding: 20px;
   background-color: #ffffff;
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
+}
+.employee-management:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .employee-management-both {
@@ -35,6 +41,15 @@ body {
 .employee-management__search{
   display: flex;
   align-items: center;
+
+  flex-direction: row;
+}
+
+.fa-light{
+ 
+  color: black;
+  background-color: blue;
+  
 }
 
 .employee-management-add{
@@ -50,12 +65,14 @@ body {
 
 .add{
   background-color: rgb(23, 158, 185);
+  border: none;
   padding:5px 3px;
   border-radius: 3px;
   max-width: 70px;
   float: right;
   display: flex;
   flex-direction: row;
+  color: white;
   align-items: center;
   text-align: center;
   margin-top: 10px;
@@ -85,6 +102,7 @@ body {
   border-radius: 4px;
   font-size: 14px;
   margin-right: 10px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .employee-management__search-button {
@@ -96,6 +114,7 @@ body {
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .employee-management__search-button:hover {
@@ -119,7 +138,7 @@ body {
 }
 
 .employee-management__row:nth-child(even) {
-  background: rgb(197, 196, 196);
+  background: #eee;
 }
 
 .employee-management__row {
@@ -179,13 +198,39 @@ body {
   background-color: #ccc;
   overflow: hidden;
 }
-.employee-management__role{
-  padding: 5px 3px;
+
+.employee-management__role-super{
+  background-color: green;
+  width:130px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding:3px 3px;
   color: white;
   border-radius: 3px;
+  font-size: 14px;
+}
+.employee-management__role-employee{
+  background-color: purple;
+  width:100px;
   justify-content: center;
-  background-color: gray;
-  margin-right: 20px;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding:3px 3px;
+  border-radius:3px;
+  font-size: 14px;
+}
+.employee-management__role-admin{
+  background-color: blue;
+  width:80px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding:3px 3px;
+  border-radius:3px;
+  font-size: 14px;
 }
 
 .employee-management__avatar img {
@@ -200,7 +245,7 @@ body {
 }
 
 .employee-management__name {
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .employee-management__email {
