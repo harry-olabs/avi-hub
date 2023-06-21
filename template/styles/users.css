@@ -2,8 +2,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
+
 ul li {
   list-style: none;
 }
@@ -12,23 +13,25 @@ html {
   height: 100%;
 }
 
-hr{
-  font-weight:400;
+hr {
+  font-weight: 400;
 }
 
 body {
   height: 100%;
   font-family: "Montserrat", sans-serif;
-  background-color: #F1F1F1;
+  background-color: #f1f1f1;
+}
 
-}
-.sidebar__item{
+.sidebar__item {
   text-decoration: none;
-  color: black
+  color: black;
 }
-.sidebar__menu-active{
+
+.sidebar__menu-active {
   color: white;
 }
+
 .employee-management {
   margin: 0 auto;
   padding: 20px;
@@ -36,6 +39,7 @@ body {
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
 }
+
 .employee-management:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
@@ -47,16 +51,18 @@ body {
   justify-content: space-between;
   padding: 2px 4px;
 }
+
 .employee-management__search {
   display: flex;
   align-items: center;
   flex-direction: row;
 }
-.search-button{
-  padding:7px 9px;
+
+.search-button {
+  padding: 8px 18px;
   background: transparent;
   border: none;
-  border:1px solid grey;
+  border: 1px solid #e8e9e9;
   border-radius: 3px;
 }
 
@@ -111,7 +117,7 @@ body {
 .employee-management__search-input {
   padding: 8px;
   width: 200px;
-  border: 1px solid grey;
+  border: 1px solid #e8e9e9;
   border-radius: 4px;
   font-size: 14px;
   margin-right: 10px;
@@ -139,15 +145,22 @@ body {
   border-collapse: collapse;
 }
 
+.employee-management__table th {
+  font-weight: 400;
+}
+
 .employee-management__table th,
 .employee-management__table td {
   padding: 10px;
   text-align: left;
-  font-weight: 500;
+}
+
+.employee-management__table td {
+  border-top: 1px solid #dee2e6;
 }
 
 .employee-management__row:nth-child(even) {
-  background: rgba(0, 0 , 0, 0.04);
+  background: rgba(0, 0, 0, 0.04);
 }
 
 .employee-management__row {
@@ -209,7 +222,7 @@ body {
 
 .employee-management__role-super {
   background-color: #e8769f;
-  width:fit-content;
+  width: fit-content;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -245,7 +258,7 @@ body {
 
 .employee-management__role-admin {
   background-color: #5a5278;
-  width:fit-content;
+  width: fit-content;
   justify-content: center;
   align-items: center;
   text-align: center;
