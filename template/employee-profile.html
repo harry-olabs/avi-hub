@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/dashboard.css" />
+    <link rel="stylesheet" href="styles/users.css">
+    <link rel="stylesheet" href="styles/employee-profile.css">
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-********"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar__left">
+        <div class="navbar__left-logo">
+          <img src="images/sniper.png" alt="logo" />
+        </div>
+        <div class="navbar__text">
+          <p>AVI-HUB</p>
+        </div>
+      </div>
+      <div class="navbar__right">
+        <img src="images/head.jpg" alt="User Image" />
+      </div>
+    </nav>
+    <div class="container">
+      <div class="sidebar">
+        <div class="sidebar__card">
+          <img src="images/head.jpg" alt="logo" />
+          <div class="sidebar__container">
+            <h4 class="text-bold-500">John Doe</h4>
+            <p>Architect & Engineer</p>
+          </div>
+        </div>
+        <section class="sidebar__menu">
+          <a class="sidebar__item" href="dashboard.html">
+            <i class="sidebar__icon fas fa-tachometer-alt"></i>
+            <span class="sidebar__text">Dashboard</span>
+          </a>
+          <a class="sidebar__item " href="users.html">
+            <i class="sidebar__icon fas fa-user"></i>
+            <span class="sidebar__text">Manage Users</span>
+          </a>
+          <a class="sidebar__item sidebar__menu-active" href="#">
+            <i class="sidebar__icon fas fa-user"></i>
+            <span class="sidebar__text">Employee profile</span>
+          </a>
+          <a class="sidebar__item " href="" >
+            <i class="sidebar__icon fas fa-id-badge"></i>
+            <span class="sidebar__text">My profile</span>
+          </a>
+        </section>
+      </div>
+      <div class="main">
+        <div class="body-gradient"></div>
+        <div class="employee-profile">
+          <div class="employee-profile-image">
+            <img class="employee-profile-img" src="images/head.jpg" alt="">
+          </div>
+          <div class="employee-profile__container">
+            <div class="employee-profile__field">
+              <span class="employee-profile__label">First Name:</span>
+              <span class="employee-profile__value">Michael</span>
+            </div>
+          </div>
+          <div class="employee-profile__container">
+            <div class="employee-profile__field">
+              <span class="employee-profile__label">Last Name:</span>
+              <span class="employee-profile__value">Julliet</span>
+            </div>
+          </div>
+          <div class="employee-profile__container">
+            <div class="employee-profile__field">
+              <span class="employee-profile__label">Email:</span>
+              <span class="employee-profile__value">mikejll@example.com</span>
+            </div>
+          </div>
+          <div class="employee-profile__container">
+            <div class="employee-profile__field">
+              <span class="employee-profile__label">Gender:</span>
+              <span class="employee-profile__value">Male</span>
+            </div>
+          </div>
+          <div class="employee-profile__container">
+            <div class="employee-profile__field">
+              <span class="employee-profile__label">Role:</span>
+              <span class="employee-profile__value">Web developer</span>
+            </div>
+          </div>
+          <div class="employee-profile__container">
+            <div class="employee-profile__field">
+              <span class="employee-profile__label">Creation Date:</span>
+              <span class="employee-profile__value">2022-05-19</span>
+            </div>
+          </div>
+        </div>
+    
+      </div>
+    </div>
+  </body>
+</html>
