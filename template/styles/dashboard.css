@@ -6,12 +6,8 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-  background-color: #f9fff9;
 }
 
-th{
-  font-weight: 400;
-}
 .text-normal {
   font-weight: normal;
 }
@@ -129,6 +125,13 @@ th{
 .sidebar__container p {
   font-size: 15px;
   color: grey;
+}
+.sidebar__item{
+  text-decoration: none;
+  color: black
+}
+.sidebar__menu-active{
+  color: white;
 }
 
 .sidebar__container {

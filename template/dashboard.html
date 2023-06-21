@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/dashboard.css" />
-    <link rel="stylesheet" href="styles/users.css">
 
     <link
       rel="stylesheet"
@@ -15,9 +14,10 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Document</title>
   </head>
@@ -44,298 +44,88 @@
             <p>Architect & Engineer</p>
           </div>
         </div>
-        <ul class="sidebar__menu">
-          <li class="sidebar__item">
+        <section class="sidebar__menu">
+          <a class="sidebar__item sidebar__menu-active" href="#">
             <i class="sidebar__icon fas fa-tachometer-alt"></i>
             <span class="sidebar__text">Dashboard</span>
-          </li>
-          <li class="sidebar__item sidebar__menu-active">
+          </a>
+          <a class="sidebar__item " href="users.html">
             <i class="sidebar__icon fas fa-user"></i>
             <span class="sidebar__text">Manage Users</span>
-          </li>
-          <li class="sidebar__item">
-            <i class="sidebar__icon fas fa-user-circle"></i>
+          </a>
+          <a class="sidebar__item" href="employee-profile">
+            <i class="sidebar__icon fas fa-user-circle" ></i>
             <span class="sidebar__text">Employee profile</span>
-          </li>
-          <li class="sidebar__item">
+          </a>
+          <a class="sidebar__item" href="profile" >
             <i class="sidebar__icon fas fa-id-badge"></i>
             <span class="sidebar__text">My profile</span>
-          </li>
-        </ul>
+          </a>
+        </section>
       </div>
       <div class="main">
-        <div class="employee-management">
-          <div class="employee-management-add">
-              <button class="add">
-                  <span class="fa fa-plus"></span>
-                  <span>Add</span>
-              </button>
-          </div>
-          <div class="employee-management-both">
-            <div class="employee-management__title">Manage Users</div>
-            <div class="employee-management__search">
-              <input type="text" class="employee-management__search-input" placeholder="Search something...">
-              <span class="fa fa-search search-icon"></span>
+        <div class="cards">
+          <div class="card item1">
+            <div class="card-item1-first">
+              <div class="card-item1-first-items">
+                <div class="card-item1-first-both">
+                  <i class="fas fa-users"></i>
+                  <h5>Employees</h5>
+                </div>
+              </div>
+              <div class="card-item1-number">
+                <h3 class="text-bold-500">700</h3>
+              </div>
             </div>
-          </div>  
-      
-          <table class="employee-management__table">
-            <thead>
-              <tr>
-                <th>NAME</th>
-                <th></th>
-                <th>CREATION DATE</th>
-                <th>ROLE</th>
-                <th>ACTIONS</th>
-              </tr>
-            </thead>
-            <tbody>
-                  <tr class="employee-management__row">
-                  <td>
-                    <div class="employee-management__name-cell">
-                      <div class="employee-management__avatar">
-                        <img src="images/img3.png" alt="Avatar">
-                      </div>
-                      <div class="employee-management__name-container">
-                        <div>
-                          <span class="employee-management__name">Samuel Tochi</span>
-                        </div>
-                        <div class="employee-management__email">samtoch@gmail.com</div>
-                      </div>
-                    </div>
-                  </td>
-                  <td>
-                    <div class="employee-management__role employee-management__role-super">Super Admin</div>
-                  </td>
-                  <td>2019-12-04</td>
-                  <td>CEO and Founder</td>
-                  <td>
-                      <div class="employee-management__action-container">
-                          <button class="employee-management__action employee-management__action--view"><span class="fa fa-eye"></span> View</button>
-                          <button class="employee-management__action employee-management__action--edit"><span class="fa fa-edit"></span> Edit</button>
-                          <button class="employee-management__action employee-management__action--delete"><span class="fa fa-trash"></span> Delete</button>
-                        </div>
-                  </td>
-                </tr>
-                  <tr class="employee-management__row">
-                  <td>
-                    <div class="employee-management__name-cell">
-                      <div class="employee-management__avatar">
-                        <img src="images/img1.jpg" alt="Avatar">
-                      </div>
-                      <div class="employee-management__name-container">
-                        <div>
-                          <span class="employee-management__name">Joshua Tochi</span>
-                        </div>
-                        <div class="employee-management__email">joshtoch@gmail.com</div>
-                      </div>
-                    </div>
-                  </td>
-                  <td>
-                    <div class="employee-management__role-employee">Employee</div>
-                  </td>
-                  <td>2020-02-04</td>
-                  <td>HR</td>
-                  <td>
-                      <div class="employee-management__action-container">
-                          <button class="employee-management__action employee-management__action--view"><span class="fa fa-eye"></span> View</button>
-                          <button class="employee-management__action employee-management__action--edit"><span class="fa fa-edit"></span> Edit</button>
-                          <button class="employee-management__action employee-management__action--delete"><span class="fa fa-trash"></span> Delete</button>
-                        </div>
-                  </td>
-                </tr>
-                <tr class="employee-management__row">
-                  <td>
-                    <div class="employee-management__name-cell">
-                      <div class="employee-management__avatar">
-                        <img src="images/img4.jpg" alt="Avatar">
-                      </div>
-                      <div class="employee-management__name-container">
-                        <div>
-                          <span class="employee-management__name">Gabriel Awe</span>
-                        </div>
-                        <div class="employee-management__email">gabawe@gmail.com</div>
-                      </div>
-                    </div>
-                  </td>
-                  <td>
-                    <div class="employee-management__role-admin ">Admin</div>
-                  </td>
-                  <td>2020-04-09</td>
-                  <td>Team lead</td>
-                  <td>
-                      <div class="employee-management__action-container">
-                          <button class="employee-management__action employee-management__action--view"><span class="fa fa-eye"></span> View</button>
-                          <button class="employee-management__action employee-management__action--edit"><span class="fa fa-edit"></span> Edit</button>
-                          <button class="employee-management__action employee-management__action--delete"><span class="fa fa-trash"></span> Delete</button>
-                        </div>
-                  </td>
-                </tr>
-                <tr class="employee-management__row">
-                  <td>
-                    <div class="employee-management__name-cell">
-                      <div class="employee-management__avatar">
-                        <img src="images/img5.jpg" alt="Avatar">
-                      </div>
-                      <div class="employee-management__name-container">
-                        <div>
-                          <span class="employee-management__name">Emmanuel Godswill</span>
-                        </div>
-                        <div class="employee-management__email">emmaogddswill@gmail.com</div>
-                      </div>
-                    </div>
-                  </td>
-                  <td>
-                    <div class="employee-management__role-admin"> Admin</div>
-                  </td>
-                  <td>2021-09-30</td>
-                  <td>Team lead</td>
-                  <td>
-                      <div class="employee-management__action-container">
-                          <button class="employee-management__action employee-management__action--view"><span class="fa fa-eye"></span> View</button>
-                          <button class="employee-management__action employee-management__action--edit"><span class="fa fa-edit"></span> Edit</button>
-                          <button class="employee-management__action employee-management__action--delete"><span class="fa fa-trash"></span> Delete</button>
-                        </div>
-                  </td>
-                </tr>
-                <tr class="employee-management__row">
-                  <td>
-                    <div class="employee-management__name-cell">
-                      <div class="employee-management__avatar">
-                        <img src="images/img4.jpg" alt="Avatar">
-                      </div>
-                      <div class="employee-management__name-container">
-                        <div>
-                          <span class="employee-management__name">Solomon Danjuma</span>
-                        </div>
-                        <div class="employee-management__email">solodan@gmail.com</div>
-                      </div>
-                    </div>
-                  </td>
-                  <td>
-                    <div class="employee-management__role-hr">HR</div>
-                  </td>
-                  <td>2023-01-28</td>
-                  <td>Team lead</td>
-                  <td>
-                      <div class="employee-management__action-container">
-                          <button class="employee-management__action employee-management__action--view"><span class="fa fa-eye"></span> View</button>
-                          <button class="employee-management__action employee-management__action--edit"><span class="fa fa-edit"></span> Edit</button>
-                          <button class="employee-management__action employee-management__action--delete"><span class="fa fa-trash"></span> Delete</button>
-                        </div>
-                  </td>
-                </tr>
-                <tr class="employee-management__row">
-                  <td>
-                    <div class="employee-management__name-cell">
-                      <div class="employee-management__avatar">
-                        <img src="images/img3.png" alt="Avatar">
-                      </div>
-                      <div class="employee-management__name-container">
-                        <div>
-                          <span class="employee-management__name">Gift Promise</span>
-                        </div>
-                        <div class="employee-management__email">giftpromi@gmail.com</div>
-                      </div>
-                    </div>
-                  </td>
-                  <td>
-                    <div class="employee-management__role-employee">Employee</div>
-                  </td>
-                  <td>2022-11-13</td>
-                  <td>Web developer</td>
-                  <td>
-                      <div class="employee-management__action-container">
-                          <button class="employee-management__action employee-management__action--view"><span class="fa fa-eye"></span> View</button>
-                          <button class="employee-management__action employee-management__action--edit"><span class="fa fa-edit"></span> Edit</button>
-                          <button class="employee-management__action employee-management__action--delete"><span class="fa fa-trash"></span> Delete</button>
-                        </div>
-                  </td>
-                </tr>
-                <tr class="employee-management__row">
-                  <td>
-                    <div class="employee-management__name-cell">
-                      <div class="employee-management__avatar">
-                        <img src="images/img1.jpg" alt="Avatar">
-                      </div>
-                      <div class="employee-management__name-container">
-                        <div>
-                          <span class="employee-management__name">Ogochikwu Sharon</span>
-                        </div>
-                        <div class="employee-management__email">ogochshar@gmail.com</div>
-                      </div>
-                    </div>
-                  </td>
-                  <td>
-                    <div class="employee-management__role-admin">Admin</div>
-                  </td>
-                  <td>2020-05-29</td>
-                  <td>UI/UX designer</td>
-                  <td>
-                      <div class="employee-management__action-container">
-                          <button class="employee-management__action employee-management__action--view"><span class="fa fa-eye"></span> View</button>
-                          <button class="employee-management__action employee-management__action--edit"><span class="fa fa-edit"></span> Edit</button>
-                          <button class="employee-management__action employee-management__action--delete"><span class="fa fa-trash"></span> Delete</button>
-                        </div>
-                  </td>
-                </tr>
-                <tr class="employee-management__row">
-                  <td>
-                    <div class="employee-management__name-cell">
-                      <div class="employee-management__avatar">
-                        <img src="images/img5.jpg" alt="Avatar">
-                      </div>
-                      <div class="employee-management__name-container">
-                        <div>
-                          <span class="employee-management__name">Jeffery Benson</span>
-                        </div>
-                        <div class="employee-management__email">jeffben@gmail.com</div>
-                      </div>
-                    </div>
-                  </td>
-                  <td>
-                    <div class="employee-management__role-employee">Employee</div>
-                  </td>
-                  <td>2023-02-11</td>
-                  <td>Web developer</td>
-                  <td>
-                      <div class="employee-management__action-container">
-                          <button class="employee-management__action employee-management__action--view"><span class="fa fa-eye"></span> View</button>
-                          <button class="employee-management__action employee-management__action--edit"><span class="fa fa-edit"></span> Edit</button>
-                          <button class="employee-management__action employee-management__action--delete"><span class="fa fa-trash"></span> Delete</button>
-                        </div>
-                  </td>
-                </tr>
-                <tr class="employee-management__row">
-                  <td>
-                    <div class="employee-management__name-cell">
-                      <div class="employee-management__avatar">
-                        <img src="images/img2.png" alt="Avatar">
-                      </div>
-                      <div class="employee-management__name-container">
-                        <div>
-                          <span class="employee-management__name">Ogunlare Tobiloba</span>
-                        </div>
-                        <div class="employee-management__email">ogunlartobi@gmail.com</div>
-                      </div>
-                    </div>
-                  </td>
-                  <td>
-                    <div class="employee-management__role-employee">Employee</div>
-                  </td>
-                  <td>2022-05-19</td>
-                  <td>UI/UX designer</td>
-                  <td>
-                      <div class="employee-management__action-container">
-                          <button class="employee-management__action employee-management__action--view"><span class="fa fa-eye"></span> View</button>
-                          <button class="employee-management__action employee-management__action--edit"><span class="fa fa-edit"></span> Edit</button>
-                          <button class="employee-management__action employee-management__action--delete"><span class="fa fa-trash"></span> Delete</button>
-                        </div>
-                  </td>
-                </tr>
-              
-            </tbody>
-          </table>
+            <div class="card-content">
+              <h3>Employee Structure</h3>
+              <div class="card-items-number">
+                <div class="card-items-number-column">
+                  <h2>70%</h2>
+                  <h4 class="text-normal">Male</h4>
+                </div>
+                <div class="card-items-number-column">
+                  <h2>30%</h2>
+                  <h4 class="text-normal">Female</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card item1">
+            <div class="card-item1-first">
+              <div class="card-item1-first-items">
+                <div class="card-item1-first-both">
+                  <i class="fas fa-user-plus"></i>
+                  <h5>New Employees</h5>
+                </div>
+              </div>
+              <div class="card-item1-number">
+                <h3 class="text-bold-500">30</h3>
+              </div>
+            </div>
+            <div class="card-content">
+              <h3>Today</h3>
+              <div class="card-items-number">
+                <div class="card-items-number-column">
+                  <h2>70%</h2>
+                  <h4 class="text-normal">Male</h4>
+                </div>
+                <div class="card-items-number-column">
+                  <h2>30%</h2>
+                  <h4 class="text-normal">Female</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card item3">
+            <div class="item3-container">
+              <img src="images/head.jpg" alt="Avatar" />
+              <div class="item3-content">
+                <h3 class="text-bold-500">Welcome, John</h3>
+                <p>Thurs, 13 June 2023</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
