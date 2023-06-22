@@ -23,3 +23,9 @@
   th{
     font-weight:400;
   }
+  .grey{
+    color: grey
+  }
+  .blue{
+    color: blue;
+  }
