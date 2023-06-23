@@ -429,6 +429,11 @@ body {
 }
 .employee-id-1 {
   margin-bottom: 5px;
+  font-weight:500;
+}
+
+.design h2{
+  font-weight:500;
 }
 
 .info-edit {
@@ -448,6 +453,8 @@ body {
   display: flex;
   justify-content: space-between;
 }
+
+
 
 .employee__contacts {
   position: relative;
@@ -484,7 +491,7 @@ body {
   width: 120px;
   height: 120px;
   object-fit: cover;
-  border: 1px solid red;
+  border: 2px solid  #d15267;
   border-radius: 50%;
 }
 
@@ -516,6 +523,7 @@ body {
 .information-value {
   margin-left: 10px;
   color: #8e8e8e;
+  font-size:15px;
 }
 
 .information-sections {
@@ -555,11 +563,13 @@ body {
 .info-label {
   font-weight: 500;
   min-width: 250px;
+  font-size: 15px;
 }
 
 .info-value {
   margin-left: 10px;
   color: grey;
+  font-size:15px;
 }
 
 .thin-line {
