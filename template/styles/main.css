@@ -1,31 +1,17 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-  }
-  ul li{
-    list-style: none;
-  }
-  
-  html {
-    height: 100%;
-  }
-  
-  body {
-    height: 100%;
-    font-family: 'Montserrat', sans-serif;
-  }
+@import "variables.css";
 
-  .fa{
-    padding:0 6px;
-  }
-  th{
-    font-weight:400;
-  }
-  .grey{
-    color: #8E8E8E;
-  }
-  .blue{
-    color: blue;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+}
+
+html, body {
+  height: 100%;
+  font-family: var(--font-family);
+}
+
+li {
+  list-style: none;
+}
