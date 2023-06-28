@@ -33,8 +33,6 @@ const LoginPage = () => {
             onChange={handleEmailChange}
             placeholder="Enter your email"
           />
-          {/* <Input type="email" placeholder='email'/> */}
-          {/* {emailError && <div className="error">{emailError}</div>} */}
         </div>
         <div className="form__group">
           <label htmlFor="password" className="form__label">
@@ -46,8 +44,6 @@ const LoginPage = () => {
             onChange={handlePasswordChange}
             placeholder="Enter your password"
           />{" "}
-          {/* <Input type="password" placeholder='password'/> */}
-          {/* {passwordError && <div className="error">{passwordError}</div>} */}
         </div>
         <Button text="Login" />
       </form>
