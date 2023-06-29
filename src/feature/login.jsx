@@ -4,6 +4,8 @@ import logo from "../images/sniper.png";
 import Button from "../components/Button";
 import Input from "../components/input";
 
+// Adedoyin 
+
 const LoginPage = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
