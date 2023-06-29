@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import "./input.css";
 
-const Input = ({ type, onChange, placeholder }) => {
-  const [value, setValue] = useState("");
+const Input = ({ type, value, onChange, placeholder }) => {
+  const [inputValue, setInputValue] = useState("");
   const [error, setError] = useState("");
 
   const handleChange = (e) => {
     const inputValue = e.target.value;
-    setValue(inputValue);
+    setInputValue(inputValue);
 
     if (type === "email") {
       if (!validateEmail(inputValue)) {
@@ -19,6 +19,13 @@ const Input = ({ type, onChange, placeholder }) => {
     } else if (type === "password") {
       if (inputValue.length < 6) {
         setError("Password must be at least 6 characters long.");
+      } else {
+        setError("");
+        onChange(inputValue);
+      }
+    } else if (type === "repeat-password") {
+      if (inputValue !== value) {
+        setError("Passwords do not match.");
       } else {
         setError("");
         onChange(inputValue);
@@ -36,7 +43,7 @@ const Input = ({ type, onChange, placeholder }) => {
     <div className="input">
       <input
         type={type}
-        value={value}
+        value={inputValue}
         onChange={handleChange}
         placeholder={placeholder}
       />

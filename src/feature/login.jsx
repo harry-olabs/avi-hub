@@ -10,11 +10,13 @@ const LoginPage = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleEmailChange = (value) => {
+  const handleEmailChange = (e) => {
+    const value = e.target.value;
     setEmail(value);
   };
 
-  const handlePasswordChange = (value) => {
+  const handlePasswordChange = (e) => {
+    const value = e.target.value;
     setPassword(value);
   };
 
@@ -45,7 +47,7 @@ const LoginPage = () => {
             value={password}
             onChange={handlePasswordChange}
             placeholder="Enter your password"
-          />{" "}
+          />
         </div>
         <Button text="Login" />
       </form>
