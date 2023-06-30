@@ -14,7 +14,7 @@ body {
 .container {
   max-width: 700px;
   background-color: white;
-  padding: 70px;
+  padding: 80px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   transform: scale(0.9);
@@ -86,7 +86,7 @@ body {
   background-color: #45a049;
 }
 
-.register-link {
+.register__link {
   text-align: center;
   margin-top: 20px;
 }

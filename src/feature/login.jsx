@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import "./login.css";
+import styles from "./Login.module.css";
 import logo from "../images/sniper.png";
 import Button from "../components/Button";
 import Input from "../components/input";
 
-// Adedoyin 
 
 const LoginPage = () => {
   const [email, setEmail] = useState("");
@@ -21,14 +20,14 @@ const LoginPage = () => {
   };
 
   return (
-    <div className="container">
-      <div className="container__logo">
+    <div className={styles.container}>
+      <div className={styles.container__logo}>
         <img src={logo} alt="Description" />
       </div>
-      <h1 className="container__title">Login</h1>
-      <form className="form">
-        <div className="form__group">
-          <label htmlFor="email" className="form__label">
+      <h1 className={styles.container__title}>Login</h1>
+      <form className={styles.form}>
+        <div className={styles.form__group}>
+          <label htmlFor="email" className={styles.form__label}>
             Email Address:
           </label>
           <Input
@@ -38,8 +37,8 @@ const LoginPage = () => {
             placeholder="Enter your email"
           />
         </div>
-        <div className="form__group">
-          <label htmlFor="password" className="form__label">
+        <div className={styles.form__group}>
+          <label htmlFor="password" className={styles.form__label}>
             Password:
           </label>
           <Input
@@ -51,10 +50,10 @@ const LoginPage = () => {
         </div>
         <Button text="Login" />
       </form>
-      <div className="register-link">
+      <div className={styles.register__link}>
         <p>
           Don't have an account yet?
-          <a href="dashboard.html" className="register__link__anchor">
+          <a href="dashboard.html" className={styles.register__link__anchor}>
             Register
           </a>
         </p>
