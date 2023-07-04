@@ -69,4 +69,8 @@ const Login = () => {
   );
 };
 
+<<<<<<< HEAD
 export default Login;
+=======
+export default LoginPage;
+>>>>>>> a224c4c (changes naming formats of the files)
