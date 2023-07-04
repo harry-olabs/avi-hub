@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./input.css";
+import "./Input.css";
 
 const Input = ({ type, value, onChange, placeholder }) => {
   const [inputValue, setInputValue] = useState("");
