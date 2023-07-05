@@ -1,8 +1,10 @@
 import React, { useState } from "react";
+import { Link} from "react-router-dom";
 import styles from "./Login.module.css";
 import logo from "../../images/sniper.png";
 import Button from "../../components/Button";
 import Input from "../../components/Input";
+import { Routes } from "react-router-dom";
 
 const LoginPage = () => {
   const [email, setEmail] = useState("");
@@ -52,9 +54,9 @@ const LoginPage = () => {
       <div className={styles.register__link}>
         <p>
           Don't have an account yet?
-          <a href="dashboard.html" className={styles.register__link__anchor}>
-            Register
-          </a>
+          <span>
+          <Link to="/Registration" className={styles.register__link__anchor}>Register</Link>
+          </span>
         </p>
       </div>
     </div>

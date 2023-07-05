@@ -89,10 +89,11 @@ body {
 .register__link {
   text-align: center;
   margin-top: 20px;
+  color: black;
 }
 
 .register__link__anchor {
   color: #333;
   text-decoration: none;
-  margin-left:5px;
+  margin-left:10px;
 }
