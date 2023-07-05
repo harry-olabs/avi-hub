@@ -1,9 +1,11 @@
 import React, { useState } from "react";
+import { Link} from "react-router-dom";
 import styles from "./Login.module.css";
 import logo from "../../images/sniper.png";
 import Button from "../../components/Button";
 import { Link, useNavigate } from "react-router-dom";
 import Input from "../../components/Input";
+import { Routes } from "react-router-dom";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -69,8 +71,4 @@ const Login = () => {
   );
 };
 
-<<<<<<< HEAD
 export default Login;
-=======
-export default LoginPage;
->>>>>>> a224c4c (changes naming formats of the files)
