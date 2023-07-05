@@ -6,8 +6,8 @@ import Registration from "./feature/Registration";
 function App() {
   return (
     <div className="App">
-      <Login />
-      {/* <Registration/> */}
+      {/* <Login /> */}
+      <Registration/>
     </div>
   );
 }
