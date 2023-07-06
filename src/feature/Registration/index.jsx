@@ -3,7 +3,7 @@ import styles from "./Registration.module.css"
 
 const index = () => {
   return (
-    <div>Registration Page</div>
+    <div>This is the Registration Page</div>
   )
 }
 
