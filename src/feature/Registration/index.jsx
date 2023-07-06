@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Registration.module.css";
+import { Link} from "react-router-dom";
 import logo from "../../images/sniper.png";
 import Button from "../../components/Button";
 import Input from "../../components/Input";
@@ -62,15 +63,15 @@ const Registration = () => {
           />
         </div>
         <div className="form__group">
-          <Button text="register" />
+          <Button text="Register" />
         </div>
       </form>
       <div className={styles.register__link}>
         <p>
           Already have an account?
-          <a href="dashboard.html"className={styles.register__link__anchor}>
-            Login
-          </a>
+          <span>
+          <Link to="/Login" className={styles.register__link__anchor}>Login</Link>
+          </span>
         </p>
       </div>
     </div>
