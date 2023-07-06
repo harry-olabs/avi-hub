@@ -6,15 +6,15 @@ import { Route, Routes } from "react-router-dom";
 
 function App() {
   return <Routes>
-    <Route path="/" element={<Login/>}/>
-    <Route path="/registration" element={<Registration/>}/>
+    <Route path="/login" element={<Login/>}/>
+    <Route path="/" element={<Registration/>}/>
   </Routes>
 }
 
 export default App;
 (
   <div className="App">
-    {/* <Login /> */}
+    <Login />
     <Registration/>
   </div>
 );
