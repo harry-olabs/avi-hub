@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import styles from "./Login.module.css";
 import logo from "../../images/sniper.png";
 import Button from "../../components/Button";
@@ -55,7 +55,9 @@ const LoginPage = () => {
         <p>
           Don't have an account yet?
           <span>
-          <Link to="/Registration" className={styles.register__link__anchor}>Register</Link>
+            <Link to="/Registration" className={styles.register__link__anchor}>
+              Register
+            </Link>
           </span>
         </p>
       </div>
