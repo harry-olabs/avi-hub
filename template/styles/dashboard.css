@@ -126,11 +126,13 @@ body {
   font-size: 15px;
   color: grey;
 }
-.sidebar__item{
+
+.sidebar__item {
   text-decoration: none;
-  color: black
+  color: black;
 }
-.sidebar__menu-active{
+
+.sidebar__menu-active {
   color: white;
 }
 

@@ -19,9 +19,7 @@ const LoginPage = () => {
     const value = e.target.value;
     setPassword(value);
   };
-  const handleClick = () =>{
-
-  }
+  const handleClick = () => {};
 
   return (
     <div className={styles.body}>

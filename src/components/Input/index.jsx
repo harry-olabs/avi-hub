@@ -8,10 +8,10 @@ const Input = ({ type, value, onChange, placeholder }) => {
   const handleChange = (e) => {
     const inputValue = e.target.value;
     setInputValue(inputValue);
-    validation()
+    validation();
   };
 
-  const validation = () =>{
+  const validation = () => {
     if (type === "email") {
       if (!validateEmail(inputValue)) {
         setError("Invalid email format.");
@@ -34,7 +34,7 @@ const Input = ({ type, value, onChange, placeholder }) => {
         onChange(inputValue);
       }
     }
-  }
+  };
 
   const validateEmail = (email) => {
     // Basic email validation using a regular expression
