@@ -1,21 +1,20 @@
 import React from "react";
+import "./App.css";
 import Login from "./feature/Login";
 import Registration from "./feature/Registration";
-import Dashboard from "./feature/Dashboard";
 import { Route, Routes } from "react-router-dom";
 
 function App() {
   return <Routes>
-    <Route path="/" element={<Login/>}/>
-    <Route path="/registration" element={<Registration/>}/>
-    <Route path= "/dashboard" element={<Dashboard/>} />
+    <Route path="/login" element={<Login/>}/>
+    <Route path="/" element={<Registration/>}/>
   </Routes>
 }
 
 export default App;
 (
   <div className="App">
-    <Login />
+    {/* <Login /> */}
     <Registration/>
   </div>
 );
