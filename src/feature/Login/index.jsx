@@ -50,7 +50,7 @@ const LoginPage = () => {
               placeholder="Enter your password"
             />
           </div>
-          <Button to="./dashboard" text="Login" />
+          <Button to="./Dashboard" text="Login" />
         </form>
         <div className={styles.register__link}>
           <p>

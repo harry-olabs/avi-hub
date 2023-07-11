@@ -3,11 +3,13 @@ import "./App.css";
 import Login from "./feature/Login";
 import Registration from "./feature/Registration";
 import { Route, Routes } from "react-router-dom";
+import Dashboard from "./feature/Dashboard";
 
 function App() {
   return <Routes>
-    <Route path="/login" element={<Login/>}/>
-    <Route path="/" element={<Registration/>}/>
+    <Route path="/" element={<Login/>}/>
+    <Route path="/registration" element={<Registration/>}/>
+    <Route path="/dashboard"  element={<Dashboard/>}/>
   </Routes>
 }
 
