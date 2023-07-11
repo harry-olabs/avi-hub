@@ -14,9 +14,4 @@ function App() {
 }
 
 export default App;
-(
-  <div className="App">
-    {/* <Login /> */}
-    <Registration/>
-  </div>
-);
+

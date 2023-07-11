@@ -19,6 +19,9 @@ const LoginPage = () => {
     const value = e.target.value;
     setPassword(value);
   };
+  const handleClick = () =>{
+
+  }
 
   return (
     <div className={styles.body}>
@@ -50,14 +53,14 @@ const LoginPage = () => {
               placeholder="Enter your password"
             />
           </div>
-          <Button to="./Dashboard" text="Login" />
+          <Button to="./dashboard" text="Login" onclick={handleClick} />
         </form>
         <div className={styles.register__link}>
           <p>
             Don't have an account yet?
             <span>
               <Link
-                to="/Registration"
+                to="/registration"
                 className={styles.register__link__anchor}
               >
                 Register
