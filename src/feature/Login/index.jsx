@@ -19,7 +19,7 @@ const Login = () => {
   const handlePasswordChange = (value) => {
     setPassword(value);
   };
-
+  
   const handleClick = () => {
     navigate("/dashboard");
   };
