@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import styles from "./Login.module.css";
 import logo from "../../images/sniper.png";
 import Button from "../../components/Button";
@@ -21,43 +21,50 @@ const LoginPage = () => {
   };
 
   return (
-    <div className={styles.container}>
-      <div className={styles.container__logo}>
-        <img src={logo} alt="Description" />
-      </div>
-      <h1 className={styles.container__title}>Login</h1>
-      <form className={styles.form}>
-        <div className={styles.form__group}>
-          <label htmlFor="email" className={styles.form__label}>
-            Email Address:
-          </label>
-          <Input
-            type="email"
-            value={email}
-            onChange={handleEmailChange}
-            placeholder="Enter your email"
-          />
+    <div className={styles.body}>
+      <div className={styles.container}>
+        <div className={styles.container__logo}>
+          <img src={logo} alt="Description" />
         </div>
-        <div className={styles.form__group}>
-          <label htmlFor="password" className={styles.form__label}>
-            Password:
-          </label>
-          <Input
-            type="password"
-            value={password}
-            onChange={handlePasswordChange}
-            placeholder="Enter your password"
-          />
+        <h1 className={styles.container__title}>Login</h1>
+        <form className={styles.form}>
+          <div className={styles.form__group}>
+            <label htmlFor="email" className={styles.form__label}>
+              Email Address:
+            </label>
+            <Input
+              type="email"
+              value={email}
+              onChange={handleEmailChange}
+              placeholder="Enter your email"
+            />
+          </div>
+          <div className={styles.form__group}>
+            <label htmlFor="password" className={styles.form__label}>
+              Password:
+            </label>
+            <Input
+              type="password"
+              value={password}
+              onChange={handlePasswordChange}
+              placeholder="Enter your password"
+            />
+          </div>
+          <Button to="./dashboard" text="Login" />
+        </form>
+        <div className={styles.register__link}>
+          <p>
+            Don't have an account yet?
+            <span>
+              <Link
+                to="/Registration"
+                className={styles.register__link__anchor}
+              >
+                Register
+              </Link>
+            </span>
+          </p>
         </div>
-        <Button text="Login" />
-      </form>
-      <div className={styles.register__link}>
-        <p>
-          Don't have an account yet?
-          <span>
-          <Link to="/Registration" className={styles.register__link__anchor}>Register</Link>
-          </span>
-        </p>
       </div>
     </div>
   );

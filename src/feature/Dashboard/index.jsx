@@ -1,10 +1,10 @@
 import React from 'react'
-import './dashboard.css'
+import './Dashboard.css'
 
-const dashboard = () => {
+const Dashboard = () => {
   return (
     <div>dashboard</div>
   )
 }
 
-export default dashboard
+export default Dashboard
