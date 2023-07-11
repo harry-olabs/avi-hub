@@ -37,7 +37,7 @@ const Input = ({ type, value, onChange, placeholder }) => {
         onChange(inputValue);
       }
     }
-  };
+  }
 
   const validateEmail = (email) => {
     // Basic email validation using a regular expression
