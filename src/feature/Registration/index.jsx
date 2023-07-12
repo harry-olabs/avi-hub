@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Registration.module.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import logo from "../../images/sniper.png";
 import Button from "../../components/Button";
 import Input from "../../components/Input";
@@ -10,6 +10,7 @@ const Registration = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [repeat, setRepeat] = useState("");
+  const navigate = useNavigate();
 
   const handleEmailChange = (value) => {
     setEmail(value);
@@ -21,6 +22,11 @@ const Registration = () => {
   const handleRepeatPasswordChange = (value) => {
     setRepeat(value);
   };
+
+  const handleClick = () => {
+    navigate("/dashboard");
+  };
+
   return (
     <div className={styles.container}>
       <div className={styles.container__logo}>
@@ -57,13 +63,14 @@ const Registration = () => {
           </label>
           <Input
             type="repeat-password"
-            placeholder="Repeat-password"
+            placeholder="Repeat password"
             value={repeat}
             onChange={handleRepeatPasswordChange}
+            passwordValue={password}
           />
         </div>
         <div className="form__group">
-          <Button text="Register" />
+          <Button text="Login" handleClick={handleClick} />
         </div>
       </form>
       <div className={styles.register__link}>
