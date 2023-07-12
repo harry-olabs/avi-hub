@@ -1,14 +1,15 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import styles from "./Login.module.css";
 import logo from "../../images/sniper.png";
 import Button from "../../components/Button";
+import { Link, useNavigate} from "react-router-dom";
 import Input from "../../components/Input";
-import { Routes } from "react-router-dom";
 
-const LoginPage = () => {
+
+const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate();
 
   const handleEmailChange = (e) => {
     const value = e.target.value;
@@ -19,8 +20,11 @@ const LoginPage = () => {
     const value = e.target.value;
     setPassword(value);
   };
-  const handleClick = () => {};
 
+  const handleClick = () => {
+    navigate("/dashboard");
+  };
+  
   return (
     <div className={styles.body}>
       <div className={styles.container}>
@@ -51,18 +55,13 @@ const LoginPage = () => {
               placeholder="Enter your password"
             />
           </div>
-          <Button to="./dashboard" text="Login" onclick={handleClick} />
+          <Button to="/dashboard" text="Login" handleClick={handleClick} />
         </form>
         <div className={styles.register__link}>
           <p>
             Don't have an account yet?
             <span>
-              <Link
-                to="/registration"
-                className={styles.register__link__anchor}
-              >
-                Register
-              </Link>
+            <Link to="/registration" className={styles.register__link__anchor}>Register</Link>
             </span>
           </p>
         </div>
@@ -71,4 +70,5 @@ const LoginPage = () => {
   );
 };
 
-export default LoginPage;
+export default Login;
+ 
