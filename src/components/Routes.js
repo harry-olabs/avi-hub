@@ -6,11 +6,11 @@ import Dashboard from "../feature/Dashboard";
 
 function AppRoutes() {
   return (
-      <Routes>
-        <Route path="/" element={<Login />} />
-        <Route path="/registration" element={<Registration />} />
-        <Route path="/dashboard" element={<Dashboard />} />
-      </Routes>
+    <Routes>
+      <Route path="/" element={<Registration />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/dashboard" element={<Dashboard />} />
+    </Routes>
   );
 }
 
