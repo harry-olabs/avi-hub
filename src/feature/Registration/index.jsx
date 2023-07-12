@@ -36,12 +36,6 @@ const Registration = () => {
   };
 
   const handleClick = () => {
-    // Perform confirmation password validation here before navigating
-    if (!validateConfirmPassword(password, confirmPassword)) {
-      alert("Passwords do not match. Please re-enter.");
-      return;
-    }
-
     navigate("/dashboard");
   };
 
