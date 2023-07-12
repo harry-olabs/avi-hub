@@ -19,8 +19,6 @@ body {
   padding-right:100px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  transform: scale(0.9);
-  transition: transform 0.5s ease;
   font-size: 16px;
 }
 .container__description {
