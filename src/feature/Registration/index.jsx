@@ -87,7 +87,11 @@ const Registration = () => {
           />
         </div>
         <div className="form__group">
+<<<<<<< HEAD
           <Button text="Register" handleClick={handleClick} />
+=======
+          <Button text="Login" handleClick={handleClick} />
+>>>>>>> 6ab545c (made changes in the registration page)
         </div>
       </form>
       <div className={styles.register__link}>
