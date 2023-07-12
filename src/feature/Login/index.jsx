@@ -1,11 +1,9 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import styles from "./Login.module.css";
 import logo from "../../images/sniper.png";
 import Button from "../../components/Button";
 import { Link, useNavigate } from "react-router-dom";
 import Input from "../../components/Input";
-import { Routes } from "react-router-dom";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -19,11 +17,11 @@ const Login = () => {
   const handlePasswordChange = (value) => {
     setPassword(value);
   };
-  
+
   const handleClick = () => {
     navigate("/dashboard");
   };
-
+  
   return (
     <div className={styles.body}>
       <div className={styles.container}>
