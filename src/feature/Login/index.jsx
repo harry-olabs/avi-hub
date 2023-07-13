@@ -21,7 +21,7 @@ const Login = () => {
   const handleClick = () => {
     navigate("/dashboard");
   };
-  
+
   return (
     <div className={styles.body}>
       <div className={styles.container}>
@@ -58,7 +58,7 @@ const Login = () => {
           <p>
             Don't have an account yet?
             <span>
-              <Link to="/register" className={styles.login__link__anchor}>
+              <Link to="/registration" className={styles.register__link__anchor}>
                 Register
               </Link>
             </span>
