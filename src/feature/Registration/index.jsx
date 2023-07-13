@@ -70,7 +70,7 @@ const Registration = () => {
           />
         </div>
         <div className="form__group">
-          <Button text="Login" handleClick={handleClick} />
+          <Button text="Register" handleClick={handleClick} />
         </div>
       </form>
       <div className={styles.register__link}>
