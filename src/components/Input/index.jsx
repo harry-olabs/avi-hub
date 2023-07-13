@@ -8,11 +8,14 @@ const Input = ({ type, value, onChange, placeholder }) => {
   const handleChange = (e) => {
     const inputValue = e.target.value;
     setInputValue(inputValue);
-    validation();
+    validation(inputValue);
   };
 
-  const validation = () => {
-    if (type === "email") {
+  const validation = (inputValue) => {
+    if (inputValue === "") {
+      setError("");
+      onChange("");
+    } else if (type === "email") {
       if (!validateEmail(inputValue)) {
         setError("Invalid email format.");
       } else {
