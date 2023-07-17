@@ -54,11 +54,11 @@ const Login = () => {
           </div>
           <Button to="/dashboard" text="Login" handleClick={handleClick} />
         </form>
-        <div className={styles.register__link}>
+        <div className={styles.login__link}>
           <p>
             Don't have an account yet?
             <span>
-              <Link to="/registration" className={styles.register__link__anchor}>
+              <Link to="/registration" className={styles.login__link__anchor}>
                 Register
               </Link>
             </span>

@@ -87,13 +87,13 @@
   background-color:var(--primary-green)
 }
 
-.register__link {
+.login__link {
   text-align: center;
   margin-top: 20px;
   color: var(--primary-black);
 }
 
-.register__link__anchor {
+.login__link__anchor {
   color: #333;
   text-decoration: none;
   margin-left: 10px;
