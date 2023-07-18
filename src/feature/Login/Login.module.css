@@ -1,4 +1,4 @@
-@import "../../components/Main-styles/main.css";
+@import "/src/styles/main.css";
 
 .body {
   background: linear-gradient(135deg, #00f260, #0575e6);
