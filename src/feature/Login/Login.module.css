@@ -1,7 +1,7 @@
 @import "/src/styles/main.css";
 
 .body {
-  background: linear-gradient(135deg, #00f260, #0575e6);
+  background: var(--background-gradient);
   width: 100vw;
   height: 100vh;
   padding: auto auto;
@@ -52,7 +52,7 @@
 .form__label {
   display: block;
   font-weight: var(--font-bold);
-  color: #333;
+  color: var(--primary-black-2);
   margin-bottom: 5px;
 }
 
@@ -61,14 +61,14 @@
   width: 100%;
   padding: 12px;
   border-radius: 5px;
-  border: 1px solid #ccc;
-  background-color: #f2f2f2;
+  border: 1px solid var(--primary-black-2);
+  background-color: var(--primary-white-2);
   transition: background-color 0.3s ease;
 }
 
 .form__input[type="email"]:hover,
 .form__input[type="password"]:hover {
-  background-color: #e0e0e0;
+  background-color: var(--primary-white-2);
 }
 
 .form__submit {
@@ -94,7 +94,7 @@
 }
 
 .login__link__anchor {
-  color: #333;
+  color: var(--primary-black-2);
   text-decoration: none;
   margin-left: 10px;
 }
