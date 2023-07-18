@@ -73,18 +73,18 @@
 
 .form__submit {
   background-color: var(--primary-green);
-  color:var(--primary-white);
+  color: var(--primary-white);
   cursor: pointer;
   border: none;
   padding: 12px 20px;
   font-size: var(--font-size);
   border-radius: 5px;
   transition: background-color 0.3s ease;
-  box-shadow: var(--box-shadow)
+  box-shadow: var(--box-shadow);
 }
 
 .form__submit:hover {
-  background-color:var(--primary-green)
+  background-color: var(--primary-green);
 }
 
 .login__link {
