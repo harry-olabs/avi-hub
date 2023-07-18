@@ -1,4 +1,4 @@
-@import "../../components/Main-styles/main.css";
+@import "/src/styles/main.css";
 
 * {
   padding: 0;
