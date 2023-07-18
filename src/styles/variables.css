@@ -1,0 +1,32 @@
+:root {
+  /* colors */
+  --primary-red: #d15267;
+  --bg-color: white;
+  --primary-white: white;
+  --primary-green: #45a049;
+  --primary-black:black;
+
+  /* fonts */
+  --font-family: "Montserrat", sans-serif;
+  --font-size: 15px;
+  --font-bold: 500;
+	--font-bold-400:400;
+  --font-bold-600: 600;
+  --font-bold-700: 700;
+
+  /* box shadow */
+  --box-shadow-hover: 0 8px 16px 0 rgba(0, 0, 0, 0.1);
+  --box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+  /* borders */
+	--border-round: 50%;
+	--avatar-border: 2px solid rgb(230, 88, 111);
+  --border-radius: 4px;
+	--border-input: 1px solid #e8e9e9;
+
+  /* badge-colors */
+  --badge-danger-color: #e8769f;
+  --badge-primary-color: #6e7687;
+  --badge-warning-color: #cedd7a;
+  --badge-info-color: #5a5278;
+}
