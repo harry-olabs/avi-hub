@@ -2,7 +2,11 @@ import React, { useState } from "react";
 import styles from "./Login.module.css";
 import logo from "../../images/sniper.png";
 import Button from "../../components/Button";
+<<<<<<< HEAD
 import {Link, useNavigate } from "react-router-dom";
+=======
+import { Link, useNavigate } from "react-router-dom";
+>>>>>>> 1d379478d5f90bcd2cc22b59b41c0e18e8135eaa
 import Input from "../../components/Input";
 
 const Login = () => {
@@ -22,7 +26,10 @@ const Login = () => {
     navigate("/dashboard");
   };
 
+<<<<<<< HEAD
   
+=======
+>>>>>>> 1d379478d5f90bcd2cc22b59b41c0e18e8135eaa
   return (
     <div className={styles.body}>
       <div className={styles.container}>
@@ -55,11 +62,19 @@ const Login = () => {
           </div>
           <Button to="/dashboard" text="Login" handleClick={handleClick} />
         </form>
+<<<<<<< HEAD
         <div className={styles.login__link}>
           <p>
             Don't have an account yet?
             <span>
               <Link to="/registration" className={styles.login__link__anchor}>
+=======
+        <div className={styles.register__link}>
+          <p>
+            Don't have an account yet?
+            <span>
+              <Link to="/registration" className={styles.register__link__anchor}>
+>>>>>>> 1d379478d5f90bcd2cc22b59b41c0e18e8135eaa
                 Register
               </Link>
             </span>
