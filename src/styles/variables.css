@@ -9,21 +9,11 @@
   --primary-black: black;
   --primary-black-2: #333;
   --primary-black-3: rgb(72, 68, 68);
-  --primary-green: #45a049;
-  --primary-black:black;
-  --primary-white-2: #e0e0e0;
-  --primary-green: #45a049;
-  --primary-green-2: #4caf50;
-  --primary-black: black;
-  --primary-black-2: #333;
-  --primary-black-3: rgb(72, 68, 68);
 
   /* fonts */
   --font-family: "Montserrat", sans-serif;
   --font-size: 15px;
   --font-bold: 500;
-  --font-bold-400: 400;
-	--font-bold-400:400;
   --font-bold-400: 400;
   --font-bold-600: 600;
   --font-bold-700: 700;
@@ -37,14 +27,7 @@
   --avatar-border: 2px solid rgb(230, 88, 111);
   --border-radius: 4px;
   --border-input: 1px solid #e8e9e9;
-	--border-round: 50%;
 	--avatar-border: 2px solid rgb(230, 88, 111);
-  --border-radius: 4px;
-	--border-input: 1px solid #e8e9e9;
-  --border-round: 50%;
-  --avatar-border: 2px solid rgb(230, 88, 111);
-  --border-radius: 4px;
-  --border-input: 1px solid #e8e9e9;
 
   /* badge-colors */
   --badge-danger-color: #e8769f;

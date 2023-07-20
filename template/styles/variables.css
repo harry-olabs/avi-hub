@@ -3,24 +3,13 @@
   --primary-red: #d15267;
   --bg-color: white;
   --primary-white: white;
-<<<<<<< HEAD
-=======
-<<<<<<<< HEAD:template/styles/variables.css
->>>>>>> 1d379478d5f90bcd2cc22b59b41c0e18e8135eaa
   --primary-white-2: #e0e0e0;
   --primary-green: #45a049;
   --primary-green-2: #4caf50;
   --primary-black: black;
   --primary-black-2: #333;
   --primary-black-3: rgb(72, 68, 68);
-<<<<<<< HEAD
-=======
-========
-  --primary-green: #45a049;
-  --primary-black:black;
->>>>>>>> 1d379478d5f90bcd2cc22b59b41c0e18e8135eaa:src/components/Main-styles/variables.css
->>>>>>> 1d379478d5f90bcd2cc22b59b41c0e18e8135eaa
-
+  
   /* fonts */
   --font-family: "Montserrat", sans-serif;
   --font-size: 15px;
