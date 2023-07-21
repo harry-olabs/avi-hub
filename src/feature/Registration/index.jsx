@@ -8,7 +8,7 @@ import {
   validateEmail,
   validatePassword,
   validateConfirmPassword,
-} from "../../Utils/Validation";
+} from "../../utils/validation";
 
 const Registration = () => {
   const [email, setEmail] = useState("");
