@@ -1,8 +1,15 @@
 import React, { useState } from "react";
 import "./Input.css";
-import "../../utils/validation"
+import "../../utils/validation";
 
-const Input = ({ type, value, onChange, placeholder, isValid, errorMessage }) => {
+const Input = ({
+  type,
+  value,
+  onChange,
+  placeholder,
+  isValid,
+  errorMessage,
+}) => {
   const [inputValue, setInputValue] = useState(value);
 
   const handleChange = (e) => {
@@ -14,7 +21,7 @@ const Input = ({ type, value, onChange, placeholder, isValid, errorMessage }) =>
   return (
     <div className="input">
       <input
-       type="password"
+        type="password"
         value={inputValue}
         onChange={handleChange}
         placeholder={placeholder}
