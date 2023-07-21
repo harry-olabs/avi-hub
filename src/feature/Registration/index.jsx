@@ -84,7 +84,7 @@ const Registration = () => {
             Confirm Password:
           </label>
           <Input
-            type="confirmPassword"
+            type="password"
             placeholder="Confirm Password"
             value={confirmPassword}
             onChange={handleConfirmPasswordChange}
