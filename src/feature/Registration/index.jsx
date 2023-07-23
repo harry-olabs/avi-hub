@@ -7,7 +7,6 @@ import Input from "../../components/Input";
 import {
   validateEmail,
   validatePassword,
-  validateConfirmPassword,
 } from "../../utils/validation";
 
 const Registration = () => {
@@ -18,6 +17,10 @@ const Registration = () => {
   const [passwordValid, setPasswordValid] = useState(true);
   const [confirmPasswordValid, setConfirmPasswordValid] = useState(true);
   const navigate = useNavigate();
+
+  const validateConfirmPassword = (password, confirmPassword) => {
+    return password === confirmPassword;
+  };
 
   const handleEmailChange = (value) => {
     setEmail(value);

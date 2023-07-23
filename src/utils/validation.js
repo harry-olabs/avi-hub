@@ -7,7 +7,5 @@ export const validateEmail = (email) => {
     return password.length >= 6;
   };
   
-  export const validateConfirmPassword = (password, confirmPassword) => {
-    return password === confirmPassword;
-  };
+  
   
