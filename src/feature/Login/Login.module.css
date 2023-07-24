@@ -1,5 +1,3 @@
-@import "/src/styles/main.css";
-
 .body {
   background: var(--background-gradient);
   width: 100vw;

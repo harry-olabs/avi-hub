@@ -27,6 +27,7 @@
   --avatar-border: 2px solid rgb(230, 88, 111);
   --border-radius: 4px;
   --border-input: 1px solid #e8e9e9;
+	--avatar-border: 2px solid rgb(230, 88, 111);
 
   /* badge-colors */
   --badge-danger-color: #e8769f;
