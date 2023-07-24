@@ -4,10 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import logo from "../../images/sniper.png";
 import Button from "../../components/Button";
 import Input from "../../components/Input";
-import {
-  validateEmail,
-  validatePassword,
-} from "../../utils/validation";
+import { validateEmail, validatePassword } from "../../utils/validation";
 
 const Registration = () => {
   const [email, setEmail] = useState("");
@@ -103,7 +100,7 @@ const Registration = () => {
         <p>
           Already have an account?
           <span>
-            <Link to="/Login" className={styles.register__link__anchor}>
+            <Link to="/login" className={styles.register__link__anchor}>
               Login
             </Link>
           </span>
