@@ -10,7 +10,7 @@ export function Routes() {
   return (
     <BrowserRoutes>
       {/* TODO: update redirect to `dashboard` when authentication is implemente */}
-      <Route path="/" element={<Navigate to="/login" />} />
+      <Route path="/" element={<Navigate to="/dashboard" />} />
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Registration />} />
       <Route path="/dashboard" element={<Dashboard />} />
