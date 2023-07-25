@@ -21,7 +21,7 @@ const Input = ({
   return (
     <div className="input">
       <input
-        type={type === "repeat-password" ? "password" : type}
+        type={type}
         value={inputValue}
         onChange={handleChange}
         placeholder={placeholder}
