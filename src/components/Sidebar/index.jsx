@@ -1,7 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import styles from "./Sidebar.module.css";
-import logo from "../../images/head.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faUser,
@@ -9,6 +7,9 @@ import {
   faIdBadge,
   faTachometer,
 } from "@fortawesome/free-solid-svg-icons";
+
+import styles from "./Sidebar.module.css";
+import logo from "../../images/head.jpg";
 
 const Sidebar = () => {
   return (

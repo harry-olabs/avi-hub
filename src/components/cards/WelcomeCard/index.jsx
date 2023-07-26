@@ -1,6 +1,7 @@
-import React from 'react';
-import styles from './WelcomeCard.module.css';
-import logo from "../../../../images/head.jpg";
+import React from "react";
+
+import styles from "./WelcomeCard.module.css";
+import logo from "../../../images/head.jpg";
 
 const WelcomeCard = () => {
   return (

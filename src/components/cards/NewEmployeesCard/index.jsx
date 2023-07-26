@@ -1,7 +1,8 @@
 import React from "react";
-import styles from "./NewEmployeesCard.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUserPlus } from "@fortawesome/free-solid-svg-icons";
+
+import styles from "../../../styles/cards.module.css";
 
 const NewEmployeesCard = () => {
   return (
