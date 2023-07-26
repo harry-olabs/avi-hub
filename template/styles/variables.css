@@ -9,7 +9,7 @@
   --primary-black: black;
   --primary-black-2: #333;
   --primary-black-3: rgb(72, 68, 68);
-  
+
   /* fonts */
   --font-family: "Montserrat", sans-serif;
   --font-size: 15px;
@@ -21,12 +21,14 @@
   /* box shadow */
   --box-shadow-hover: 0 8px 16px 0 rgba(0, 0, 0, 0.1);
   --box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  --box-shadow-3: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
 
   /* borders */
   --border-round: 50%;
   --avatar-border: 2px solid rgb(230, 88, 111);
   --border-radius: 4px;
   --border-input: 1px solid #e8e9e9;
+	--avatar-border: 2px solid rgb(230, 88, 111);
 
   /* badge-colors */
   --badge-danger-color: #e8769f;

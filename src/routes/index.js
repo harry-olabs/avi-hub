@@ -9,7 +9,7 @@ import Dashboard from "../feature/Dashboard";
 export function Routes() {
   return (
     <BrowserRoutes>
-      {/* TODO: update redirect to `dashboard` when authentication is implemente */}
+      {/* TODO: update redirect to `dashboard` when authentication is implement */}
       <Route path="/" element={<Navigate to="/login" />} />
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Registration />} />
