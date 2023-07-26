@@ -35,70 +35,87 @@ const Registration = () => {
     setConfirmPasswordValid(validateConfirmPassword(password, value));
   };
 
-  const handleClick = () => {
+  const handleClick = (event) => {
+    event.preventDefault();
+    if (!validateEmail(email)) {
+      alert("Please enter a valid email address.");
+      return;
+    }
+
+    if (!validatePassword(password)) {
+      alert("Please enter a valid password (at least 6 characters long).");
+      return;
+    }
+
+    if (!validateConfirmPassword(password, confirmPassword)) {
+      alert("Passwords do not match. Please re-enter.");
+      return;
+    }
     navigate("/dashboard");
   };
 
   return (
-    <div className={styles.container}>
-      <div className={styles.container__logo}>
-        <img src={logo} alt="Description" />
-      </div>
-      <h1 className={styles.container__title}>Register</h1>
-      <p className={styles.container__description}>Access to our dashboard</p>
-      <form className={styles.form}>
-        <div className={styles.form__group}>
-          <label htmlFor="email" className={styles.form__label}>
-            Email Address:
-          </label>
-          <Input
-            type="email"
-            placeholder="Enter your Email"
-            value={email}
-            onChange={handleEmailChange}
-            isValid={emailValid}
-            errorMessage="Invalid email format."
-          />
+    <div className={styles.body}>
+      <div className={styles.container}>
+        <div className={styles.container__logo}>
+          <img src={logo} alt="Description" />
         </div>
-        <div className={styles.form__group}>
-          <label htmlFor="password" className={styles.form__label}>
-            Password:
-          </label>
-          <Input
-            type="password"
-            placeholder="Enter password"
-            value={password}
-            onChange={handlePasswordChange}
-            isValid={passwordValid}
-            errorMessage="Password must be at least 6 characters long."
-          />
+        <h1 className={styles.container__title}>Register</h1>
+        <p className={styles.container__description}>Access to our dashboard</p>
+        <form className={styles.form}>
+          <div className={styles.form__group}>
+            <label htmlFor="email" className={styles.form__label}>
+              Email Address:
+            </label>
+            <Input
+              type="email"
+              placeholder="Enter your Email"
+              value={email}
+              onChange={handleEmailChange}
+              isValid={emailValid}
+              errorMessage="Invalid email format."
+            />
+          </div>
+          <div className={styles.form__group}>
+            <label htmlFor="password" className={styles.form__label}>
+              Password:
+            </label>
+            <Input
+              type="password"
+              placeholder="Enter password"
+              value={password}
+              onChange={handlePasswordChange}
+              isValid={passwordValid}
+              errorMessage="Password must be at least 6 characters long."
+            />
+          </div>
+          <div className={styles.form__group}>
+            <label htmlFor="confirm-password" className={styles.form__label}>
+              Confirm Password:
+            </label>
+            <Input
+              type="password"
+              placeholder="Confirm Password"
+              value={confirmPassword}
+              onChange={handleConfirmPasswordChange}
+              isValid={confirmPasswordValid}
+              errorMessage="Passwords do not match."
+            />
+          </div>
+          <div className="form__group">
+            <Button text="Register" handleClick={handleClick} />
+          </div>
+        </form>
+        <div className={styles.register__link}>
+          <p>
+            Already have an account?
+            <span>
+              <Link to="/login" className={styles.register__link__anchor}>
+                Login
+              </Link>
+            </span>
+          </p>
         </div>
-        <div className={styles.form__group}>
-          <label htmlFor="confirm-password" className={styles.form__label}>
-            Confirm Password:
-          </label>
-          <Input
-            type="password"
-            placeholder="Confirm Password"
-            value={confirmPassword}
-            onChange={handleConfirmPasswordChange}
-            isValid={confirmPasswordValid}
-            errorMessage="Passwords do not match."
-          />
-        </div>
-        <div className="form__group">
-          <Button text="Register" handleClick={handleClick} />
-        </div>
-      </form>
-      <div className={styles.register__link}>
-        <p>
-          Already have an account?
-          <span>
-            <Link to="/login" className={styles.register__link__anchor}>
-              Login
-            </Link>
-          </span>
-        </p>
       </div>
     </div>
   );

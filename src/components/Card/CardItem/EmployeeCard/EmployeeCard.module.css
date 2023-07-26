@@ -1,8 +1,3 @@
-h5 {
-  font-weight: var(--font-bold-500);
-  font-size: var(--font-size);
-}
-
 .card__item1__first:hover {
   box-shadow: var(--box-shadow-hover);
 }
@@ -31,24 +26,7 @@ h5 {
 
 .card__item1__first h5 {
   font-weight: var(--font-bold);
-}
-
-.fa-users {
-  display: flex;
-  padding: 13px 13px;
-  color: var(--primary-white);
-  border-radius: 4px;
-  height: 15px;
-  max-width: 15px;
-}
-
-.fa__user__plus {
-  display: flex;
-  padding: 13px 13px;
-  color: var(--primary-white);
-  border-radius: 4px;
-  height: 15px;
-  max-width: 15px;
+  font-size:var(--font-size)
 }
 
 .card__content {
@@ -78,16 +56,6 @@ h5 {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-}
-
-.card__item1__first__both i {
-  background-color: var(--primary-red);
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  padding: 20px;
-  width: 20px;
 }
 
 .card__item1__first__both h5 {

@@ -1,8 +1,14 @@
-import React from 'react';
-import styles from './Sidebar.module.css';
+import React from "react";
+import { Link } from "react-router-dom";
+import styles from "./Sidebar.module.css";
 import logo from "../../images/head.jpg";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser, faUsers, faIdBadge } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faUser,
+  faUsers,
+  faIdBadge,
+  faTachometer,
+} from "@fortawesome/free-solid-svg-icons";
 
 const Sidebar = () => {
   return (
@@ -15,22 +21,28 @@ const Sidebar = () => {
         </div>
       </div>
       <section className={styles.sidebar__menu}>
-        <a className={`${styles.sidebar__item} ${styles.sidebar__menu__active}`} href="/">
-          <FontAwesomeIcon icon={faUser} className={styles.sidebar__icon} />
+        <Link
+          to="/"
+          className={`${styles.sidebar__item} ${styles.sidebar__menu__active}`}
+        >
+          <FontAwesomeIcon
+            icon={faTachometer}
+            className={styles.sidebar__icon}
+          />
           <span className={styles.sidebar__text}>Dashboard</span>
-        </a>
-        <a className={styles.sidebar__item} href="users.html">
+        </Link>
+        <Link to="/users" className={styles.sidebar__item}>
           <FontAwesomeIcon icon={faUsers} className={styles.sidebar__icon} />
           <span className={styles.sidebar__text}>Manage Users</span>
-        </a>
-        <a className={styles.sidebar__item} href="employee-profile.html">
+        </Link>
+        <Link to="/employee-profile" className={styles.sidebar__item}>
           <FontAwesomeIcon icon={faUser} className={styles.sidebar__icon} />
           <span className={styles.sidebar__text}>Employee profile</span>
-        </a>
-        <a className={styles.sidebar__item} href="profile">
+        </Link>
+        <Link to="/profile" className={styles.sidebar__item}>
           <FontAwesomeIcon icon={faIdBadge} className={styles.sidebar__icon} />
           <span className={styles.sidebar__text}>My profile</span>
-        </a>
+        </Link>
       </section>
     </div>
   );

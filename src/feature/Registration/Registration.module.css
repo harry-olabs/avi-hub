@@ -1,4 +1,4 @@
-body {
+.body {
   font-family: var(--font-family);
   background: var(--background-gradient);
   background-size: cover;
@@ -15,8 +15,8 @@ body {
   max-width: 800px;
   background-color: var(--bg-color);
   padding: 80px;
-  padding-left:100px;
-  padding-right:100px;
+  padding-left: 100px;
+  padding-right: 100px;
   border-radius: 10px;
   box-shadow: var(--box-shadow-hover);
   font-size: var(--font-size);
