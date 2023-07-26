@@ -3,10 +3,7 @@
 }
 
 .main {
-  width: 80vw;
-  margin-left: 280px;
-  margin-top: 70px;
-  padding: 16px;
+  padding: 76px 16px 16px 286px;
   height: 100vh;
   background: var(--bg-white);
 }
