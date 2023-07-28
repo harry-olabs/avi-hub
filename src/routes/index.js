@@ -5,7 +5,7 @@ import Login from "../feature/Login";
 import Registration from "../feature/Registration";
 import Dashboard from "../feature/Dashboard";
 import Users from "../feature/Users-profile";
-import Layout from "../components/Layout/Layout";
+import Layout from "../components/Layout";
 
 export function Routes() {
   return (
