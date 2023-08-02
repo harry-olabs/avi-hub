@@ -1,14 +1,20 @@
-// Layout.js
 import React from "react";
-import Navbar from "../Navbar";
-import Sidebar from "../Sidebar";
+import { Outlet } from "react-router-dom";
 
-const Layout = ({ children }) => {
+// components
+import Navbar from "./Navbar";
+import Sidebar from "./Sidebar";
+import style from "./Layout.module.css";
+
+const Layout = () => {
   return (
     <>
       <Navbar />
       <Sidebar />
-      <main>{children}</main>
+
+      <main className={style.container}>
+        <Outlet />
+      </main>
     </>
   );
 };
