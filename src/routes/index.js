@@ -15,7 +15,7 @@ export function Routes() {
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Registration />} />
 
-      {/* Hub routes - For logged in users */}
+      {/* Hub routes - For authenticated users */}
       <Route element={<Layout />}>
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/users" element={<Users />} />
