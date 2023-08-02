@@ -1,0 +1,16 @@
+/*
+ * This file contains custom classes for regularly used css styles
+ */
+
+.d-flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
