@@ -1,19 +1,25 @@
 import React from "react";
-import { Route, Routes as BrowserRoutes, Navigate } from "react-router-dom";
+import { Routes as BrowserRoutes, Route, Navigate } from "react-router-dom";
 
 // components
 import Login from "../feature/Login";
 import Registration from "../feature/Registration";
 import Dashboard from "../feature/Dashboard";
+import Users from "../feature/Users";
+import Layout from "../components/Layout";
 
 export function Routes() {
   return (
     <BrowserRoutes>
-      {/* TODO: update redirect to `dashboard` when authentication is implement */}
       <Route path="/" element={<Navigate to="/login" />} />
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Registration />} />
-      <Route path="/dashboard" element={<Dashboard />} />
+
+      {/* Hub routes - For authenticated users */}
+      <Route element={<Layout />}>
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/users" element={<Users />} />
+      </Route>
     </BrowserRoutes>
   );
 }
