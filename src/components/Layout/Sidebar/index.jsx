@@ -1,4 +1,3 @@
-// Sidebar.js
 import React from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -10,7 +9,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 import styles from "./Sidebar.module.css";
-import logo from "../../images/head.jpg";
+import logo from "../../../images/head.jpg";
 
 const Sidebar = () => {
   const location = useLocation();
@@ -31,7 +30,9 @@ const Sidebar = () => {
       <section className={styles.sidebar__menu}>
         <NavLink
           to="/dashboard"
-          className={`${styles.sidebar__item} ${isLinkActive("/dashboard") && styles.sidebar__menu__active}`}
+          className={`${styles.sidebar__item} ${
+            isLinkActive("/dashboard") && styles.sidebar__menu__active
+          }`}
         >
           <FontAwesomeIcon
             icon={faTachometer}
@@ -41,21 +42,27 @@ const Sidebar = () => {
         </NavLink>
         <NavLink
           to="/users"
-          className={`${styles.sidebar__item} ${isLinkActive("/users") && styles.sidebar__menu__active}`}
+          className={`${styles.sidebar__item} ${
+            isLinkActive("/users") && styles.sidebar__menu__active
+          }`}
         >
           <FontAwesomeIcon icon={faUsers} className={styles.sidebar__icon} />
           <span className={styles.sidebar__text}>Manage Users</span>
         </NavLink>
         <NavLink
           to="/employee-profile"
-          className={`${styles.sidebar__item} ${isLinkActive("/employee-profile") && styles.sidebar__menu__active}`}
+          className={`${styles.sidebar__item} ${
+            isLinkActive("/employee-profile") && styles.sidebar__menu__active
+          }`}
         >
           <FontAwesomeIcon icon={faUser} className={styles.sidebar__icon} />
           <span className={styles.sidebar__text}>Employee profile</span>
         </NavLink>
         <NavLink
           to="/profile"
-          className={`${styles.sidebar__item} ${isLinkActive("/profile") && styles.sidebar__menu__active}`}
+          className={`${styles.sidebar__item} ${
+            isLinkActive("/profile") && styles.sidebar__menu__active
+          }`}
         >
           <FontAwesomeIcon icon={faIdBadge} className={styles.sidebar__icon} />
           <span className={styles.sidebar__text}>My profile</span>

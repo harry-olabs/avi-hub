@@ -1,7 +1,7 @@
-import React from 'react';
-import styles from './Navbar.module.css';
-import logo from "../../images/head.jpg";
-import sniper from "../../images/sniper.png";
+import React from "react";
+import styles from "./Navbar.module.css";
+import logo from "../../../images/head.jpg";
+import sniper from "../../../images/sniper.png";
 
 const Navbar = () => {
   return (
