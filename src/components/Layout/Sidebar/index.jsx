@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faUser,
@@ -12,11 +12,12 @@ import styles from "./Sidebar.module.css";
 import logo from "../../../images/head.jpg";
 
 const Sidebar = () => {
-  const location = useLocation();
-
-  const isLinkActive = (linkPath) => {
-    return location.pathname.startsWith(linkPath);
-  };
+  /**
+   * Determines whether to set active class when the nav link item is active
+   * @param isActive Represents the active state for sidebar nav link
+   */
+  const shouldSetActiveClass = (isActive) =>
+    isActive ? styles.sidebar__menu__active : "";
 
   return (
     <div className={styles.sidebar}>
@@ -30,9 +31,9 @@ const Sidebar = () => {
       <section className={styles.sidebar__menu}>
         <NavLink
           to="/dashboard"
-          className={`${styles.sidebar__item} ${
-            isLinkActive("/dashboard") && styles.sidebar__menu__active
-          }`}
+          className={({ isActive }) =>
+            `${styles.sidebar__item} ${shouldSetActiveClass(isActive)}`
+          }
         >
           <FontAwesomeIcon
             icon={faTachometer}
@@ -42,27 +43,27 @@ const Sidebar = () => {
         </NavLink>
         <NavLink
           to="/users"
-          className={`${styles.sidebar__item} ${
-            isLinkActive("/users") && styles.sidebar__menu__active
-          }`}
+          className={({ isActive }) =>
+            `${styles.sidebar__item} ${shouldSetActiveClass(isActive)}`
+          }
         >
           <FontAwesomeIcon icon={faUsers} className={styles.sidebar__icon} />
           <span className={styles.sidebar__text}>Manage Users</span>
         </NavLink>
         <NavLink
           to="/employee-profile"
-          className={`${styles.sidebar__item} ${
-            isLinkActive("/employee-profile") && styles.sidebar__menu__active
-          }`}
+          className={({ isActive }) =>
+            `${styles.sidebar__item} ${shouldSetActiveClass(isActive)}`
+          }
         >
           <FontAwesomeIcon icon={faUser} className={styles.sidebar__icon} />
           <span className={styles.sidebar__text}>Employee profile</span>
         </NavLink>
         <NavLink
           to="/profile"
-          className={`${styles.sidebar__item} ${
-            isLinkActive("/profile") && styles.sidebar__menu__active
-          }`}
+          className={({ isActive }) =>
+            `${styles.sidebar__item} ${shouldSetActiveClass(isActive)}`
+          }
         >
           <FontAwesomeIcon icon={faIdBadge} className={styles.sidebar__icon} />
           <span className={styles.sidebar__text}>My profile</span>
