@@ -96,14 +96,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--bg-white);
+  background-color: var(--primary-white);
   position: absolute;
-  left: 5;
+  left: 5px; 
 }
 
 .sidebar__menu__active .sidebar__icon,
 .sidebar__item:hover .sidebar__icon {
   color: var(--primary-white);
+  margin-left:5px;  
 }
 
 .fa__users {
