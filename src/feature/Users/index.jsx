@@ -2,8 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch, faPlus } from "@fortawesome/free-solid-svg-icons";
 
-import Layout from "../../components/Layout";
-import EmployeeTable from "../../components/Users/EmployeeTable";
+import EmployeeTable from "../../components/Users-content/EmployeeTable";
 import styles from "./Users.module.css";
 
 const employeesData = [
@@ -57,7 +56,7 @@ const employeesData = [
   },
   {
     name: "Habby Ogunlare",
-    email: "habbyogunlare.com", 
+    email: "habbyogunlare.com",
     role: "Admin",
     creationDate: "2019-12-04",
     position: "Web developer",
@@ -67,31 +66,28 @@ const employeesData = [
 
 const Users = () => {
   return (
-      <main className={styles.main}>
-        <div className={styles.wrapper}>
-          <div className={styles.employee__management__phase1}>
-            <div className={styles.employee__management__text}>Employee</div>
-            <div className={styles.employee__management__search}>
-              <input
-                type="text"
-                className={styles.employee__management__search__input}
-                placeholder="Search something..."
-              />
-              <button className={styles.search__button}>
-                <FontAwesomeIcon
-                  icon={faSearch}
-                  className={styles.searchIcon}
-                />
-              </button>
-              <button className={styles.add}>
-                <FontAwesomeIcon icon={faPlus} className={styles.addIcon} />
-                <span>Add</span>
-              </button>
-            </div>
+    <main className={styles.main}>
+      <div className={styles.wrapper}>
+        <div className={styles.employee__management__phase1}>
+          <div className={styles.employee__management__text}>Employee</div>
+          <div className={styles.employee__management__search}>
+            <input
+              type="text"
+              className={styles.employee__management__search__input}
+              placeholder="Search something..."
+            />
+            <button className={styles.search__button}>
+              <FontAwesomeIcon icon={faSearch} className={styles.searchIcon} />
+            </button>
+            <button className={styles.add}>
+              <FontAwesomeIcon icon={faPlus} className={styles.addIcon} />
+              <span>Add</span>
+            </button>
           </div>
-          <EmployeeTable employees={employeesData} />
         </div>
-      </main>
+        <EmployeeTable employees={employeesData} />
+      </div>
+    </main>
   );
 };
 

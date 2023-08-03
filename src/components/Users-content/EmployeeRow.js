@@ -1,33 +1,33 @@
-import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEye, faEdit, faTrash } from '@fortawesome/free-solid-svg-icons';
+import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEye, faEdit, faTrash } from "@fortawesome/free-solid-svg-icons";
+
 import styles from "../../styles/users.module.css";
 
 const EmployeeRow = (props) => {
   const { name, email, avatar, role, creationDate, position } = props;
   const avatarSrc = require(`../../${avatar}`);
 
-
   return (
     <tr className={styles.employee__management__row}>
       <td>
         <div className={styles.employee__management__name__cell}>
           <div className={styles.employee__management__avatar}>
-          <img src={avatarSrc} alt="Description" />
+            <img src={avatarSrc} alt="Description" />
           </div>
           <div className={styles.employee__management__name__container}>
             <div>
               <span className={styles.employee__management__name}>{name}</span>
             </div>
-            <div className={styles.employee__management__email}>
-              {email}
-            </div>
+            <div className={styles.employee__management__email}>{email}</div>
           </div>
         </div>
       </td>
       <td>
         <div
-          className={`${styles.employee__management__role} ${styles[`employee__management__role__${role.toLowerCase()}`]}`}
+          className={`${styles.employee__management__role} ${
+            styles[`employee__management__role__${role.toLowerCase()}`]
+          }`}
         >
           {role}
         </div>
@@ -36,13 +36,19 @@ const EmployeeRow = (props) => {
       <td>{position}</td>
       <td>
         <div className={styles.employee__management__action__container}>
-          <button className={`${styles.employee__management__action} ${styles.employee__management__action__view}`}>
+          <button
+            className={`${styles.employee__management__action} ${styles.employee__management__action__view}`}
+          >
             <FontAwesomeIcon icon={faEye} /> View
           </button>
-          <button className={`${styles.employee__management__action} ${styles.employee__management__action__edit}`}>
+          <button
+            className={`${styles.employee__management__action} ${styles.employee__management__action__edit}`}
+          >
             <FontAwesomeIcon icon={faEdit} /> Edit
           </button>
-          <button className={`${styles.employee__management__action} ${styles.employee__management__action__delete}`}>
+          <button
+            className={`${styles.employee__management__action} ${styles.employee__management__action__delete}`}
+          >
             <FontAwesomeIcon icon={faTrash} /> Delete
           </button>
         </div>

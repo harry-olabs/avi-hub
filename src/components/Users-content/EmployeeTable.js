@@ -1,7 +1,7 @@
-// EmployeeTable.js
-import React from 'react';
-import EmployeeRow from './EmployeeRow'; // Import the EmployeeRow component
-import styles from "../../styles/users.module.css"
+import React from "react";
+
+import EmployeeRow from "./EmployeeRow";
+import styles from "../../styles/users.module.css";
 
 const EmployeeTable = (props) => {
   const { employees } = props; // Assume employees is an array of employee data

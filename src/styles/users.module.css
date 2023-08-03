@@ -408,11 +408,11 @@
   width: 30px;
   height: 30px;
   border-radius: var(--border-round);
-  background-color: #ccc;
+  background-color: var(--primary-white-2);
   overflow: hidden;
 }
 
-.employee__management__role__super  {
+.employee__management__role__super {
   background-color: var(--badge-danger-color);
   width: fit-content;
   justify-content: center;
