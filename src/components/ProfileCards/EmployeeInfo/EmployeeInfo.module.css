@@ -1,0 +1,43 @@
+.employee__info {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.employee__info__img img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border: var(--avatar-border);
+  border-radius: var(--border-round);
+}
+
+.employee__info__details {
+  margin-left: 20px;
+}
+
+.employee__info__design h2 {
+  font-weight: var(--font-bold);
+  margin-bottom: 5px;
+}
+
+.employee__info__position.grey {
+  font-weight: var(--font-bold);
+}
+
+.employee__info__job-title.grey {
+  font-weight: var(--font-bold);
+}
+
+.employee__info__id {
+  margin-top: 10px;
+}
+
+.employee__info__id-number {
+  margin-bottom: 5px;
+  font-weight: var(--font-bold);
+}
+
+.employee__info__join-date.grey {
+  font-weight: var(--font-bold);
+}

@@ -1,0 +1,73 @@
+.emergencyContactContainer {
+  margin-top: 20px;
+  margin-right: 20px;
+  background-color: var(--bg-color);
+  border-radius: var(--border-radius);
+  flex: 1;
+  padding: 20px;
+  box-shadow: var(--box-shadow);
+  transition: box-shadow 0.3s;
+  padding-bottom: 25px;
+  position: relative;
+}
+
+.emergencyContactContainer:hover {
+  box-shadow: var(--box-shadow-hover);
+}
+
+.infoEdit {
+  display: flex;
+  justify-content: space-between;
+}
+
+.infoHeading {
+  margin-bottom: 20px;
+  font-weight: var(--font-bold);
+  font-size: 20px;
+}
+
+.editIcon {
+  color: grey;
+  cursor: pointer;
+}
+
+.infoColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.infoRow {
+  display: flex;
+  margin-bottom: 10px;
+  font-size: var(--font-size);
+}
+
+.infoLabel {
+  font-weight: 500;
+  min-width: 250px;
+}
+
+.infoValue {
+  margin-left: 10px;
+  color: grey;
+}
+
+.thinLine {
+  height: 1px;
+  width: 100%;
+  background-color: #ccc;
+  margin: 10px 0;
+}
+
+.contact__info__right {
+  top: 0;
+  right: 0;
+  position: absolute;
+  padding: 10px;
+}
+
+.contact__info__edit {
+  display: flex;
+  align-items: flex-start;
+  cursor: pointer;
+}
