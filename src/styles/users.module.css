@@ -371,12 +371,9 @@
   transition: background-color 0.3s ease;
 }
 
-/* .employee__management__action:hover {
-    background-color: #1a5276;
-  } */
-
 .employee__management__action__view {
   background-color: #8e44ad;
+  text-decoration: none;
 }
 
 .employee__management__action__view:hover {
@@ -412,7 +409,7 @@
   overflow: hidden;
 }
 
-.employee__management__role__super {
+.employee__management__role__superadmin {
   background-color: var(--badge-danger-color);
   width: fit-content;
   justify-content: center;
@@ -436,7 +433,7 @@
   font-size: var(--font-size);
 }
 
-.employee__management__role__hr {
+.employee__management__role__hradmin {
   background-color: var(--badge-warning-color);
   width: fit-content;
   justify-content: center;

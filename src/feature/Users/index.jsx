@@ -9,7 +9,7 @@ const employeesData = [
   {
     name: "Joshua Gideon",
     email: "joshgideon.com",
-    role: "Super",
+    role: "Super Admin",
     creationDate: "2017-01-02",
     position: "CEO and Founder",
     avatar: "images/img5.jpg",
@@ -33,7 +33,7 @@ const employeesData = [
   {
     name: "Gabriel Grace",
     email: "gabrielgrace.com",
-    role: "HR",
+    role: "HR Admin",
     creationDate: "2009-09-04",
     position: "Human Resource",
     avatar: "images/img4.jpg",
@@ -69,20 +69,27 @@ const Users = () => {
     <main className={styles.main}>
       <div className={styles.wrapper}>
         <div className={styles.employee__management__phase1}>
-          <div className={styles.employee__management__text}>Employee</div>
+          <div className={styles.employee__management__text}>Manage Users</div>
           <div className={styles.employee__management__search}>
-            <input
-              type="text"
-              className={styles.employee__management__search__input}
-              placeholder="Search something..."
-            />
-            <button className={styles.search__button}>
-              <FontAwesomeIcon icon={faSearch} className={styles.searchIcon} />
-            </button>
-            <button className={styles.add}>
-              <FontAwesomeIcon icon={faPlus} className={styles.addIcon} />
-              <span>Add</span>
-            </button>
+            <div className={styles.adds}>
+              <button className={styles.add}>
+                <FontAwesomeIcon icon={faPlus} className={styles.addIcon} />
+                <span>Add</span>
+              </button>
+            </div>
+            <div className={styles.search}>
+              <input
+                type="text"
+                className={styles.employee__management__search__input}
+                placeholder="Search something..."
+              />
+              <button className={styles.search__button}>
+                <FontAwesomeIcon
+                  icon={faSearch}
+                  className={styles.searchIcon}
+                />
+              </button>
+            </div>
           </div>
         </div>
         <EmployeeTable employees={employeesData} />

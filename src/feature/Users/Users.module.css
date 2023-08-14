@@ -18,7 +18,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  background-color: var(--primary-white-2);
+  padding-top:40px;
   border-radius: 4px;
 }
 
@@ -30,6 +30,8 @@
 .employee__management__search {
   display: flex;
   align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .employee__management__search__input {
@@ -40,17 +42,42 @@
 .search__button,
 .add {
   margin-right: 4px;
-  background: transparent;
+  background: none;
   cursor: pointer;
+  border-color: #999 ;
   display: flex;
+  color: #999;
   align-items: center;
   padding: 0.5rem;
   border-radius: 4px;
 }
 
+.search__button{
+  margin-left:5px; 
+}
+
+.adds{
+  width:100%;
+  align-items: center;
+}
+
 .add {
-  background-color: var(--primary-blue);
   color: var(--primary-white);
   border-radius: 4px;
   border: none;
+  margin-left: 195px;
+  background:var(--primary-blue-2);
+  border: none;
+  display: flex;
+  align-items: center;
+  margin-top:-35px;
+  margin-bottom:5px;
+  cursor: pointer;
+  color: var(--primary-white);
+  margin-right:-200px;
+}
+
+.search{
+  display: flex;
+  flex-direction: row;
 }
