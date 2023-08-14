@@ -7,6 +7,7 @@ import styles from "./Users.module.css";
 
 const employeesData = [
   {
+    id:1,
     name: "Joshua Gideon",
     email: "joshgideon.com",
     role: "Super Admin",
@@ -15,6 +16,7 @@ const employeesData = [
     avatar: "images/img5.jpg",
   },
   {
+    id:2,
     name: "Henry Solomon",
     email: "henrysolomon@gmail.com",
     role: "Admin",
@@ -23,6 +25,7 @@ const employeesData = [
     avatar: "images/img3.png",
   },
   {
+    id:3,
     name: "Michael Orji",
     email: "michaelorji.com",
     role: "Admin",
@@ -31,6 +34,7 @@ const employeesData = [
     avatar: "images/img1.jpg",
   },
   {
+    id:4,
     name: "Gabriel Grace",
     email: "gabrielgrace.com",
     role: "HR Admin",
@@ -39,6 +43,7 @@ const employeesData = [
     avatar: "images/img4.jpg",
   },
   {
+    id:5,
     name: "Tolulope Opeyemi",
     email: "tolulopeopeyemi.com",
     role: "Employee",
@@ -47,6 +52,7 @@ const employeesData = [
     avatar: "images/img3.png",
   },
   {
+    id:6,
     name: "Jeffery Benson",
     email: "jeffbenson.com",
     role: "Employee",
@@ -55,6 +61,7 @@ const employeesData = [
     avatar: "images/img2.png",
   },
   {
+    id:7,
     name: "Habby Ogunlare",
     email: "habbyogunlare.com",
     role: "Admin",

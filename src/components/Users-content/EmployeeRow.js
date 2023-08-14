@@ -26,34 +26,34 @@ const EmployeeRow = (props) => {
       </td>
       <td>
         <div
-        className={`${styles.employee__management__role} ${
-          styles[`employee__management__role__${role.toLowerCase().replace(' ', '')}`]
-        }`}
-      >
+          className={`${styles.employee__management__role} ${
+            styles[`employee__management__role__${role.toLowerCase().replace(' ', '')}`]
+          }`}
+        >
           {role}
         </div>
       </td>
       <td>{creationDate}</td>
       <td>{position}</td>
       <td>
-      <div className={styles.employee__management__action__container}>
-    <Link
-      to={`/employee-profile`} // Adjust the route as needed
-      className={`${styles.employee__management__action} ${styles.employee__management__action__view}`}
-    >
-      <FontAwesomeIcon icon={faEye} /> View
-    </Link>
-    <button
-      className={`${styles.employee__management__action} ${styles.employee__management__action__edit}`}
-    >
-      <FontAwesomeIcon icon={faEdit} /> Edit
-    </button>
-    <button
-      className={`${styles.employee__management__action} ${styles.employee__management__action__delete}`}
-    >
-      <FontAwesomeIcon icon={faTrash} /> Delete
-    </button>
-  </div>
+        <div className={styles.employee__management__action__container}>
+          <Link
+            to={`/employee-profile`} // Adjust the route as needed
+            className={`${styles.employee__management__action} ${styles.employee__management__action__view}`}
+          >
+            <FontAwesomeIcon icon={faEye} /> View
+          </Link>
+          <button
+            className={`${styles.employee__management__action} ${styles.employee__management__action__edit}`}
+          >
+            <FontAwesomeIcon icon={faEdit} /> Edit
+          </button>
+          <button
+            className={`${styles.employee__management__action} ${styles.employee__management__action__delete}`}
+          >
+            <FontAwesomeIcon icon={faTrash} /> Delete
+          </button>
+        </div>
       </td>
     </tr>
   );
