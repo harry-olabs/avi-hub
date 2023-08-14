@@ -23,7 +23,7 @@ function PassportInfo() {
       </div>
       <div className={styles.infoRow}>
         <div className={styles.infoLabel}>Tel:</div>
-        <div className={`${styles.infoValue} ${styles.infoValue__blue}`}>1234567890</div>
+        <div className={styles.infoValue}>1234567890</div>
       </div>
       <div className={styles.infoRow}>
         <div className={styles.infoLabel}>Nationality:</div>

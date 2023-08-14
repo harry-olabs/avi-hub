@@ -12,18 +12,20 @@ function EmployeeProfile() {
         <div className={styles.employee__profile__section1}>
           <div className={styles.employee__profile__section1__info}>
             <div className={styles.EmployeeInfo}>
-            <EmployeeInfo />
+              <EmployeeInfo />
             </div>
-            <div className={styles.vertical__line}></div>
-            <div className={styles.ContactInfo}>
-              <ContactInfo />
+            <div className={styles.vertical__contact}>
+              <div className={styles.vertical__line}></div>
+              <div className={styles.ContactInfo}>
+                <ContactInfo />
+              </div>
             </div>
           </div>
         </div>
         <section className={styles.information__sections}>
           <PassportInfo />
           <EmergencyContact />
-        </section>
+        </section>  
       </div>
     </div>
   );

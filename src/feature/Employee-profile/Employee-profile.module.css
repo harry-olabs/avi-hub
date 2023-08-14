@@ -1,9 +1,13 @@
+.main {
+  width: 80vw;
+}
 .employee__profile__section1 {
   border-radius: var(--border-radius);
   padding: 20px;
-  width: 100%;
   box-shadow: var(--box-shadow);
   transition: box-shadow 0.3s;
+  align-items: center;
+  justify-content: center;
 }
 
 .employee__profile__section1:hover {
@@ -12,10 +16,11 @@
 
 .employee__profile__section1__info {
   display: flex;
+  justify-content: space-evenly;
 }
 
 .ContactInfo {
-  margin-left: 300px;
+  margin-left: 5px;
   align-items: center;
   justify-content: center;
 }
@@ -23,13 +28,17 @@
 .vertical__line {
   border-left: 3px dotted grey;
   margin-top: 25px;
+  margin-left: 5px;
   height: 120px;
-  position: absolute;
-  margin-left: 620px;
 }
 
 .information__sections {
   display: flex;
   align-items: flex-start;
-  width:81vw;
+  width: 81vw;
+}
+
+.vertical__contact {
+  display: flex;
+  justify-content: center;
 }
