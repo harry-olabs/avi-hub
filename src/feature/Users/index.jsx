@@ -73,37 +73,31 @@ const employeesData = [
 
 const Users = () => {
   return (
-      <div className="d-flex flex-column wrapper-container">
-        <div className={styles.employee__management__phase1}>
-          <div className={styles.employee__management__search}>
-            <div className={styles.adds}>
-              <button className={styles.add}>
-                <FontAwesomeIcon icon={faPlus} className={styles.addIcon} />
-                <span>Add</span>
-              </button>
-            </div>
-            <div className={styles.row__content}>
-              <h3 className={styles.employee__management__text}>
-                Manage Users
-              </h3>
-              <div className={styles.search}>
-                <input
-                  type="text"
-                  className={styles.employee__management__search__input}
-                  placeholder="Search something..."
-                />
-                <button className={styles.search__button}>
-                  <FontAwesomeIcon
-                    icon={faSearch}
-                    className={styles.searchIcon}
-                  />
-                </button>
-              </div>
-            </div>
+    <div className="d-flex flex-column card-wrapper">
+      <header className={styles.header}>
+        <div className="align-self-end">
+          <button className={styles.addBtn}>
+            <FontAwesomeIcon icon={faPlus} />
+            <span>Add</span>
+          </button>
+        </div>
+        <div className="d-flex justify-content-between">
+          <h3 className={styles.header__title}>Manage Users</h3>
+          <div className={styles.header__search}>
+            <input
+              type="text"
+              className={styles.header__search__input}
+              placeholder="Search something..."
+            />
+            <button className={styles.header__search__btn}>
+              <FontAwesomeIcon icon={faSearch} className={styles.searchIcon} />
+            </button>
           </div>
         </div>
-        <EmployeeTable employees={employeesData} />
-      </div>
+      </header>
+
+      <EmployeeTable employees={employeesData} />
+    </div>
   );
 };
 
