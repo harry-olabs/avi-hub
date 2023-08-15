@@ -1,13 +1,13 @@
 import React from "react";
 
-import EmployeeRow from "./EmployeeTableRow";
+import EmployeeRow from "../EmployeeTableRow";
 import styles from "./EmployeeTable.module.css";
 
 const EmployeeTable = (props) => {
   const { employees } = props;
 
   return (
-    <table className={styles.employee__management__table}>
+    <table className={styles.table}>
       <thead>
         <tr>
           <th>NAME</th>

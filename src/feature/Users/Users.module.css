@@ -9,7 +9,7 @@
   display: flex;
   align-items: center;
   gap: 4px;
-  background: var(--primary-blue-2);
+  background: var(--primary-blue-10);
   color: var(--primary-white);
   border: none;
   border-radius: var(--border-radius);

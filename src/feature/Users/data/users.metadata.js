@@ -6,7 +6,7 @@ const employeesData = [
     role: "Super Admin",
     creationDate: "2017-01-02",
     position: "CEO and Founder",
-    avatar: "images/img5.jpg",
+    avatarUrl: "/images/img5.jpg",
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ const employeesData = [
     role: "Admin",
     creationDate: "2020-11-04",
     position: "Web developer",
-    avatar: "images/img3.png",
+    avatarUrl: "/images/img3.png",
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ const employeesData = [
     role: "Admin",
     creationDate: "2021-04-02",
     position: "Graphics designer",
-    avatar: "images/img1.jpg",
+    avatarUrl: "/images/img1.jpg",
   },
   {
     id: 4,
@@ -33,7 +33,7 @@ const employeesData = [
     role: "HR Admin",
     creationDate: "2009-09-04",
     position: "Human Resource",
-    avatar: "images/img4.jpg",
+    avatarUrl: "/images/img4.jpg",
   },
   {
     id: 5,
@@ -42,7 +42,7 @@ const employeesData = [
     role: "Employee",
     creationDate: "2022-03-14",
     position: "Web designer",
-    avatar: "images/img3.png",
+    avatarUrl: "/images/img3.png",
   },
   {
     id: 6,
@@ -51,7 +51,7 @@ const employeesData = [
     role: "Employee",
     creationDate: "2011-06-20",
     position: "Project Manager",
-    avatar: "images/img2.png",
+    avatarUrl: "/images/img2.png",
   },
   {
     id: 7,
@@ -60,7 +60,7 @@ const employeesData = [
     role: "Admin",
     creationDate: "2019-12-04",
     position: "Web developer",
-    avatar: "images/img5.jpg",
+    avatarUrl: "/images/img5.jpg",
   },
 ];
 
