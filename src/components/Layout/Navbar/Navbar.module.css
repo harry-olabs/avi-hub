@@ -55,6 +55,6 @@
   width: 40px;
   object-fit: cover;
   border: 1px solid var(--primary-red);
-  border-radius: 10px;
+  border-radius: var(--border-radius);
   cursor: pointer;
 }

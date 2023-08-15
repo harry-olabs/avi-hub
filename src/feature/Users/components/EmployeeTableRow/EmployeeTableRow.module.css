@@ -1,0 +1,96 @@
+.row:nth-child(even) {
+  background: rgba(0, 0, 0, 0.04);
+}
+
+.cell {
+  display: flex;
+}
+
+.avatar {
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: var(--border-round);
+  background-color: var(--primary-white-2);
+  overflow: hidden;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cell__email {
+  font-size: var(--font-size);
+  color: var(--primary-black-4);
+}
+
+.cell__role {
+  width: fit-content;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 3px 5px;
+  color: var(--primary-white);
+  border-radius: var(--border-radius);
+  font-size: var(--font-size);
+  background-color: var(--primary-black-4);
+}
+
+.role__superadmin {
+  background-color: var(--badge-danger-color);
+}
+
+.role__employee {
+  background-color: var(--badge-primary-color);
+}
+
+.role__hradmin {
+  background-color: var(--badge-warning-color);
+}
+
+.role__admin {
+  background-color: var(--badge-info-color);
+}
+
+.actions {
+  display: flex;
+  flex-direction: row;
+}
+
+.actionBtn {
+  margin-right: 5px;
+  padding: 8px 10px;
+  color: var(--primary-white);
+  background-color: var(--primary-blue-20);
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.action__view {
+  background-color: var(--primary-purple);
+  text-decoration: none;
+}
+
+.action__view:hover {
+  background-color: var(--primary-purple-10);
+}
+
+.action__edit {
+  background-color: var(--primary-gold);
+}
+
+.action__edit:hover {
+  background-color: var(--primary-gold-10);
+}
+
+.action__delete {
+  background-color: var(--primary-red);
+}
+
+.action__delete:hover {
+  background-color: var(--primary-red-10);
+}

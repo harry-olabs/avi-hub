@@ -14,7 +14,7 @@
 .sidebar__card {
   background-color: var(--bg-white);
   padding: 10px;
-  border-radius: 10px;
+  border-radius: var(--border-radius);
   display: flex;
   margin-bottom: 10px;
   width: 97%;
@@ -29,7 +29,7 @@
 .sidebar__card img {
   height: 40px;
   width: 40px;
-  border-radius: 10px;
+  border-radius: var(--border-radius);
   object-fit: cover;
   border: 1px solid var(--primary-red);
 }
@@ -96,14 +96,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--bg-white);
+  background-color: var(--primary-white);
   position: absolute;
-  left: 5;
+  left: 5px;
 }
 
 .sidebar__menu__active .sidebar__icon,
 .sidebar__item:hover .sidebar__icon {
   color: var(--primary-white);
+  margin-left: 5px;
 }
 
 .fa__users {

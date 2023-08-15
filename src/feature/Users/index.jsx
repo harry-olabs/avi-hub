@@ -1,9 +1,38 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearch, faPlus } from "@fortawesome/free-solid-svg-icons";
+
+import EmployeeTable from "./components/EmployeeTable";
+import styles from "./Users.module.css";
+
+import employeesData from "./data/users.metadata";
 
 const Users = () => {
   return (
-    <div className="d-flex">
-      <h3>this is the users-profile page</h3>
+    <div className="d-flex flex-column card-wrapper">
+      <header className={styles.header}>
+        <div className="align-self-end">
+          <button className={styles.addBtn}>
+            <FontAwesomeIcon icon={faPlus} />
+            <span>Add</span>
+          </button>
+        </div>
+        <div className="d-flex justify-content-between">
+          <h3 className={styles.header__title}>Manage Users</h3>
+          <div className={styles.header__search}>
+            <input
+              type="text"
+              className={styles.header__search__input}
+              placeholder="Search something..."
+            />
+            <button className={styles.header__search__btn}>
+              <FontAwesomeIcon icon={faSearch} className={styles.searchIcon} />
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <EmployeeTable employees={employeesData} />
     </div>
   );
 };
