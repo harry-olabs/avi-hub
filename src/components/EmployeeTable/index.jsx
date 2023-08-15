@@ -1,7 +1,7 @@
 import React from "react";
 
 import EmployeeRow from "./EmployeeTableRow";
-import styles from "../../styles/users.module.css";
+import styles from "./EmployeeTable.module.css";
 
 const EmployeeTable = (props) => {
   const { employees } = props;

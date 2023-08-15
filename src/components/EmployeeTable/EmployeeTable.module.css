@@ -1,0 +1,28 @@
+.employee__management__table {
+  margin-top: 20px;
+  width: 100%;
+  text-align: left;
+}
+
+.employee__management__table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+.employee__management__table th {
+  font-weight: var(--font-bold-400);
+}
+
+.employee__management__table th,
+.employee__management__table td {
+  padding: 10px;
+  text-align: left;
+}
+
+.employee__management__table td {
+  border-top: 1px solid #dee2e6;
+}
+
+.employee__management__row:nth-child(even) {
+  background: rgba(0, 0, 0, 0.04);
+}

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye, faEdit, faTrash } from "@fortawesome/free-solid-svg-icons";
 
-import styles from "../../styles/users.module.css";
+import styles from "./EmployeeTableRow.module.css"
 
 const EmployeeRow = (props) => {
   const { name, email, avatar, role, creationDate, position } = props;
@@ -60,3 +60,4 @@ const EmployeeRow = (props) => {
 };
 
 export default EmployeeRow;
+  
