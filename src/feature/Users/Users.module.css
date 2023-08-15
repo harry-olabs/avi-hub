@@ -15,11 +15,22 @@
 
 .employee__management__phase1 {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 1rem;
   padding-top:40px;
   border-radius: 4px;
+}
+
+.row__content{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width:100%;
+}
+
+.addIcon{
+  margin-right: 4px;
 }
 
 .employee__management__text {
@@ -31,13 +42,15 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: center;
+  width: 100%;
+  justify-content: space-between;
 }
 
 .employee__management__search__input {
   height: 40px;
   padding: 0.5rem;
   background-color: var(--bg-white);
+  align-items: center;
 }
 
 .search__button,
@@ -48,9 +61,8 @@
   border-color: var(--primary-black-4) ;
   display: flex;
   color: var(--primary-black-4);
-  align-items: center;
-  padding: 0.8rem;
-  border-radius: 4px;
+  padding: 0.7rem;
+  border-radius: var(--border-radius);
 }
 
 .search__button{
@@ -64,25 +76,30 @@
   width:100%;
   align-items: center;
   margin-bottom: 10px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 3px 0px 3px 0px;
 }
 
 .add {
+  position: relative;
   color: var(--primary-white);
-  border-radius: 4px;
+  border-radius: var(--border-radius);
   border: none;
-  margin-left: 197px;
   background:var(--primary-blue-2);
   border: none;
   display: flex;
   align-items: center;
-  margin-top:-35px;
-  margin-bottom:5px;
   cursor: pointer;
   color: var(--primary-white);
-  margin-right:-200px;
+  float: right;
+
 }
 
 .search{
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
