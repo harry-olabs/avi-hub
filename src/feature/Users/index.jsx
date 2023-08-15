@@ -2,7 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch, faPlus } from "@fortawesome/free-solid-svg-icons";
 
-import EmployeeTable from "../../components/Users-content/EmployeeTable";
+import EmployeeTable from "../../components/EmployeeTable";
 import styles from "./Users.module.css";
 
 const employeesData = [

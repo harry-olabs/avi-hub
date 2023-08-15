@@ -14,7 +14,7 @@
 .sidebar__card {
   background-color: var(--bg-white);
   padding: 10px;
-  border-radius: 10px;
+  border-radius: var(--border-radius);
   display: flex;
   margin-bottom: 10px;
   width: 97%;
