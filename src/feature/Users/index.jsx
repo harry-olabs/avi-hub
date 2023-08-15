@@ -73,8 +73,7 @@ const employeesData = [
 
 const Users = () => {
   return (
-    <main className={styles.main}>
-      <div className={styles.wrapper}>
+      <div className="d-flex flex-column wrapper-container">
         <div className={styles.employee__management__phase1}>
           <div className={styles.employee__management__search}>
             <div className={styles.adds}>
@@ -84,9 +83,9 @@ const Users = () => {
               </button>
             </div>
             <div className={styles.row__content}>
-              <div className={styles.employee__management__text}>
+              <h3 className={styles.employee__management__text}>
                 Manage Users
-              </div>
+              </h3>
               <div className={styles.search}>
                 <input
                   type="text"
@@ -105,7 +104,6 @@ const Users = () => {
         </div>
         <EmployeeTable employees={employeesData} />
       </div>
-    </main>
   );
 };
 

@@ -17,7 +17,6 @@
   display: flex;
   align-items: center;
   padding: 1rem;
-  padding-top:40px;
   border-radius: 4px;
 }
 
@@ -31,10 +30,12 @@
 
 .addIcon{
   margin-right: 4px;
+  color: white;
+  font-size: 16px;
 }
 
 .employee__management__text {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: var(--font-bold);
 }
 
@@ -47,10 +48,10 @@
 }
 
 .employee__management__search__input {
-  height: 40px;
-  padding: 0.5rem;
+  padding: 8px;
   background-color: var(--bg-white);
   align-items: center;
+  font-size: var(--font-size-2);
 }
 
 .search__button,
@@ -58,10 +59,10 @@
   margin-right: 4px;
   background: none;
   cursor: pointer;
-  border-color: var(--primary-black-4) ;
+  border-color: var(--primary-black-3) ;
   display: flex;
-  color: var(--primary-black-4);
-  padding: 0.7rem;
+  color: var(--primary-black-3);
+  padding: 8px 18px;
   border-radius: var(--border-radius);
 }
 
@@ -80,7 +81,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  padding: 3px 0px 3px 0px;
+  padding: 2px 0px 2px 0px;
 }
 
 .add {
@@ -95,6 +96,7 @@
   cursor: pointer;
   color: var(--primary-white);
   float: right;
+  padding: 8px 10px;
 
 }
 

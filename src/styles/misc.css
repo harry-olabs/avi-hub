@@ -14,3 +14,8 @@
 .justify-content-between {
   justify-content: space-between;
 }
+
+.wrapper-container{
+  box-shadow: var(--box-shadow);
+  padding: 20px;
+}
