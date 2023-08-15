@@ -1,88 +1,56 @@
-.container {
-  width: 100%;
-}
-
-.main {
-  padding: 0px 16px 6px 0px;
-  background: var(--bg-white);
-  overflow: hidden;
-}
-
-.wrapper {
+.header {
   display: flex;
   flex-direction: column;
+  gap: 10px;
+  margin-bottom: 24px;
 }
 
-.employee__management__phase1 {
+.addBtn {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 1rem;
-  padding-top:40px;
-  border-radius: 4px;
+  gap: 4px;
+  background: var(--primary-blue-2);
+  color: var(--primary-white);
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  padding: 8px 10px;
 }
 
-.employee__management__text {
-  font-size: 1.3rem;
+.header__title {
+  font-size: 24px;
   font-weight: var(--font-bold);
 }
 
-.employee__management__search {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.employee__management__search__input {
-  height: 40px;
-  padding: 0.5rem;
-  background-color: var(--bg-white);
-}
-
-.search__button,
-.add {
-  margin-right: 4px;
-  background: none;
-  cursor: pointer;
-  border-color: var(--primary-black-4) ;
-  display: flex;
-  color: var(--primary-black-4);
-  align-items: center;
-  padding: 0.8rem;
-  border-radius: 4px;
-}
-
-.search__button{
-  margin-left:9px; 
-  color: var(--primary-black);
-  border: 1px solid var(--primary-black-4);
-  font-size: var(--font-size)
-}
-
-.adds{
-  width:100%;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-.add {
-  color: var(--primary-white);
-  border-radius: 4px;
-  border: none;
-  margin-left: 197px;
-  background:var(--primary-blue-2);
-  border: none;
-  display: flex;
-  align-items: center;
-  margin-top:-35px;
-  margin-bottom:5px;
-  cursor: pointer;
-  color: var(--primary-white);
-  margin-right:-200px;
-}
-
-.search{
+.header__search {
   display: flex;
   flex-direction: row;
+  align-items: center;
+}
+
+.header__search__input {
+  width: 200px;
+  padding: 8px;
+  background-color: var(--bg-white);
+  font-size: var(--font-size);
+  border: var(--border-input);
+  border-radius: var(--border-radius);
+}
+
+.header__search__input:focus,
+.header__search__input:focus-visible {
+  outline: none;
+}
+
+.header__search__input:hover {
+  background: transparent;
+}
+
+.header__search__btn {
+  background: none;
+  cursor: pointer;
+  padding: 8px 18px;
+  margin-left: 10px;
+  border-radius: var(--border-radius);
+  border: var(--border-input);
 }
