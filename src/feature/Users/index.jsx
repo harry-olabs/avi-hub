@@ -77,27 +77,7 @@ const Users = () => {
       <div className={styles.wrapper}>
         <div className={styles.employee__management__phase1}>
           <div className={styles.employee__management__text}>Manage Users</div>
-          <div className={styles.employee__management__search}>
-            <div className={styles.adds}>
-              <button className={styles.add}>
-                <FontAwesomeIcon icon={faPlus} className={styles.addIcon} />
-                <span>Add</span>
-              </button>
-            </div>
-            <div className={styles.search}>
-              <input
-                type="text"
-                className={styles.employee__management__search__input}
-                placeholder="Search something..."
-              />
-              <button className={styles.search__button}>
-                <FontAwesomeIcon
-                  icon={faSearch}
-                  className={styles.searchIcon}
-                />
-              </button>
-            </div>
-          </div>
+          
         </div>
         <EmployeeTable employees={employeesData} />
       </div>
