@@ -12,6 +12,10 @@
   border-radius: var(--border-round);
 }
 
+.employee__info__job__title{
+  margin-top: 10px;
+}
+
 .employee__info__details {
   margin-left: 20px;
 }

@@ -30,7 +30,7 @@
 
 .contact__info__value {
   margin-left: 10px;
-  color: #8e8e8e;
+  color: var(--primary-black-4);
   font-size: var(--font-size);
 }
 
@@ -43,4 +43,5 @@
   position: absolute;
   top:0;
   right: 0;
+  color:var(--primary-black-4);
 }

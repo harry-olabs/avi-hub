@@ -1,6 +1,7 @@
 :root {
   /* colors */
   --primary-red: #d15267;
+  --primary-red-10: #c0392b;
   --bg-color: white;
   --primary-white: white;
   --primary-white-2: #e0e0e0;
@@ -10,8 +11,13 @@
   --primary-black-2: #333;
   --primary-black-3: rgb(72, 68, 68);
   --primary-black-4: #999;
-  --primary-blue:blue;
-  --primary-blue-2: rgb(23, 158, 185);
+  --primary-blue: blue;
+  --primary-blue-10: #179eb9;
+  --primary-blue-20: #2980b9;
+  --primary-purple: #8e44ad;
+  --primary-purple-10: #6c3483;
+  --primary-gold: #f39c12;
+  --primary-gold-10: #d68910;
 
   /* fonts */
   --font-family: "Montserrat", sans-serif;
@@ -31,7 +37,7 @@
   --avatar-border: 2px solid rgb(230, 88, 111);
   --border-radius: 4px;
   --border-input: 1px solid #e8e9e9;
-	--avatar-border: 2px solid rgb(230, 88, 111);
+  --avatar-border: 2px solid rgb(230, 88, 111);
 
   /* badge-colors */
   --badge-danger-color: #e8769f;

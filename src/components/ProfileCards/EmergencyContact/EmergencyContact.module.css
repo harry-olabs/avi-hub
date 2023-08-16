@@ -70,4 +70,5 @@
   display: flex;
   align-items: flex-start;
   cursor: pointer;
+  color: var(--primary-black-4)
 }

@@ -2,10 +2,10 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch, faPlus } from "@fortawesome/free-solid-svg-icons";
 
-import EmployeeTable from "../../components/EmployeeTable";
+import EmployeeTable from "./components/EmployeeTable";
 import styles from "./Users.module.css";
 
-import employeesData from "../../components/users.metadata";
+import employeesData from "./data/users.metadata";
 
 const Users = () => {
   return (
