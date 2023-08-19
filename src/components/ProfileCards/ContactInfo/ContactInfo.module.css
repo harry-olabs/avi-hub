@@ -1,12 +1,12 @@
 .contact__info {
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    position: relative;
-    min-width: 540px;
-    min-height: 20px;
-    width:100%;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+  min-width: 540px;
+  min-height: 20px;
+  width: 100%;
+  justify-content: center;
 }
 
 .contact__info__left {
@@ -34,14 +34,12 @@
   font-size: var(--font-size);
 }
 
-
-
 .contact__info__edit {
   display: flex;
   align-items: flex-start;
   cursor: pointer;
   position: absolute;
-  top:0;
+  top: 0;
   right: 0;
-  color:var(--primary-black-4);
+  color: var(--primary-black-4);
 }

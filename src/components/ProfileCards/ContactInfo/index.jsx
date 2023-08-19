@@ -28,7 +28,7 @@ function ContactInfo() {
           </div>
           <div className={styles.contact__info__row}>
             <div className={styles.contact__info__label}>Gender:</div>
-            <div className={styles.contact__info__value}>Male</div>
+            <div className={styles.contact__info__value}>Male</div> 
           </div>
         </div>
       </div>

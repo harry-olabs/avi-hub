@@ -49,7 +49,7 @@
 
 .infoValue {
   margin-left: 10px;
-  color: grey;
+  color: var(--primary-black-4);
 }
 
 .thinLine {

@@ -37,8 +37,9 @@
   min-width: 250px;
 }
 
-.infoValue__blue {
-  color: var(--primary-blue);
+.infoValue {
+  margin-left: 10px;
+  color: var(--primary-black-4);
 }
 
 .contact__info__right {
