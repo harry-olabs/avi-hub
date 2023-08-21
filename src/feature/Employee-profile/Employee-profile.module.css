@@ -1,13 +1,10 @@
-.main {
-  width: 80vw;
-}
 .employee__profile__section1 {
   border-radius: var(--border-radius);
+  display: flex;
   padding: 10px;
   box-shadow: var(--box-shadow);
   transition: box-shadow 0.3s;
-  align-items: center;
-  justify-content: center;
+  margin-right: 20px;
 }
 
 .employee__profile__section1:hover {
@@ -16,17 +13,23 @@
 
 .employee__profile__section1__info {
   display: flex;
-  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+.EmployeeInfo {
+  flex: 1;
 }
 
 .ContactInfo {
   margin-left: 5px;
   align-items: center;
   justify-content: center;
+  flex: 1;
 }
 
 .vertical__line {
-  border-left: 3px dotted grey;
+  border-left: 3px dotted var(--primary-black-4);
   margin-top: 25px;
   margin-left: 5px;
   height: 120px;
@@ -41,4 +44,11 @@
 .vertical__contact {
   display: flex;
   justify-content: center;
+}
+
+.contact__info__edit {
+  display: flex;
+  align-items: flex-start;
+  cursor: pointer;
+  color: var(--primary-black-4);
 }

@@ -36,10 +36,10 @@
 
 .contact__info__edit {
   display: flex;
+  margin-top: -80px;
+  margin-right: -80px;
+
   align-items: flex-start;
   cursor: pointer;
-  position: absolute;
-  top: 0;
-  right: 0;
   color: var(--primary-black-4);
 }

@@ -1,7 +1,6 @@
 .employee__info {
   display: flex;
   padding: 20px;
-  margin-right: 270px;
 }
 
 .employee__info__img img {
@@ -12,16 +11,19 @@
   border-radius: var(--border-round);
 }
 
-.employee__info__job__title{
+.employee__info__job__title {
   margin-top: 10px;
 }
 
 .employee__info__details {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
   margin-left: 20px;
 }
 
-.employee__info__id__number{
-  margin-bottom:2px;
+.employee__info__id__number {
+  margin-bottom: 2px;
 }
 
 .employee__info__design h2 {
