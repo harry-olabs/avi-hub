@@ -2,9 +2,10 @@ import React from "react";
 
 import EmployeeRow from "../EmployeeTableRow";
 import styles from "./EmployeeTable.module.css";
+import { useEmployeeContext } from "../../UserContext/EmployeeContext";
 
-const EmployeeTable = (props) => {
-  const { employees } = props;
+const EmployeeTable = () => {
+  const { employees } = useEmployeeContext();
 
   return (
     <table className={styles.table}>

@@ -5,9 +5,11 @@ import { faSearch, faPlus } from "@fortawesome/free-solid-svg-icons";
 import EmployeeTable from "./components/EmployeeTable";
 import styles from "./Users.module.css";
 
-import employeesData from "./data/users.metadata";
+import { useEmployeeContext } from "./UserContext/EmployeeContext";
 
 const Users = () => {
+  const { employees } = useEmployeeContext();
+
   return (
     <div className="d-flex flex-column card-wrapper">
       <header className={styles.header}>
@@ -32,7 +34,7 @@ const Users = () => {
         </div>
       </header>
 
-      <EmployeeTable employees={employeesData} />
+      <EmployeeTable employees={employees} />
     </div>
   );
 };
