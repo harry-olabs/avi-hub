@@ -3,7 +3,7 @@ const employeeData = {
     phone: "1234567890",
     email: "johndoe@gmail.com",
     birthday: "30th July",
-    address: "21st, surulere, Nigeria",
+    address: "21st, surulere, Lagos, Nigeria",
     gender: "Male",
   },
   emergencyContacts: [

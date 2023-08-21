@@ -6,7 +6,7 @@ import Login from "../feature/Login";
 import Registration from "../feature/Registration";
 import Dashboard from "../feature/Dashboard";
 import Users from "../feature/Users";
-import EmployeeProfile from "../feature/Employee-profile";
+import EmployeeProfile from "../feature/EmployeeProfile";
 import Layout from "../components/Layout";
 
 export function Routes() {
@@ -20,7 +20,7 @@ export function Routes() {
       <Route element={<Layout />}>
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/users" element={<Users />} />
-        <Route path="/employee-profile" element={<EmployeeProfile />} />
+        <Route path="/users/profile" element={<EmployeeProfile />} />
       </Route>
     </BrowserRoutes>
   );

@@ -1,12 +1,12 @@
 .contact__info {
   display: flex;
   align-items: center;
-  padding: 20px;
   position: relative;
   min-width: 540px;
   min-height: 20px;
   width: 100%;
   justify-content: center;
+  flex: 1;
 }
 
 .contact__info__left {

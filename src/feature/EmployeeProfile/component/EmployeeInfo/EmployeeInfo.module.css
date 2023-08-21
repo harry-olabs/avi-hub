@@ -1,6 +1,6 @@
 .employee__info {
   display: flex;
-  padding: 20px;
+  flex: 1;
 }
 
 .employee__info__img img {
@@ -23,7 +23,7 @@
 }
 
 .employee__info__id__number {
-  margin-bottom: 2px;
+  margin-bottom: 5px;
 }
 
 .employee__info__design h2 {

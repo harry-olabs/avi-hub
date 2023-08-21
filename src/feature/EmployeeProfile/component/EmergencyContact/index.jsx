@@ -11,7 +11,9 @@ function EmergencyContact() {
     <div className={styles.emergencyContactContainer}>
       <div className={styles.infoEdit}>
         <h2 className={styles.infoHeading}>Emergency Contact</h2>
-        <i className={`${styles.editIcon} far fa-edit`}></i>
+        <div className={styles.contact__info__edit}>
+          <FontAwesomeIcon icon={faEdit} className={styles.sidebar__icon} />
+        </div>
       </div>
 
       <div className={styles.infoColumn}>
@@ -47,12 +49,6 @@ function EmergencyContact() {
         <div className={styles.infoRow}>
           <div className={styles.infoLabel}>Phone:</div>
           <div className={styles.infoValue}>{emergencyContacts[1].phone}</div>
-        </div>
-      </div>
-
-      <div className={styles.contact__info__right}>
-        <div className={styles.contact__info__edit}>
-          <FontAwesomeIcon icon={faEdit} className={styles.sidebar__icon} />
         </div>
       </div>
     </div>

@@ -12,6 +12,7 @@ function ContactInfo() {
           <div className={styles.contact__info__row}>
             <div className={styles.contact__info__label}>Phone:</div>
             <div className={styles.contact__info__value}>{phone}</div>
+            
           </div>
           <div className={styles.contact__info__row}>
             <div className={styles.contact__info__label}>Email:</div>

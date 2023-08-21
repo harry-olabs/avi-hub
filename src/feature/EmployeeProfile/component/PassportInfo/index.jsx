@@ -19,7 +19,9 @@ function PassportInfo() {
     <div className={styles.passportInfoContainer}>
       <div className={styles.infoEdit}>
         <div className={styles.infoHeading}>Passport Information</div>
-        <i className={`${styles.editIcon} far fa-edit`}></i>
+          <div className={styles.contact__info__edit}>
+            <FontAwesomeIcon icon={faEdit} className={styles.sidebar__icon} />
+          </div>
       </div>
       <div className={styles.infoRow}>
         <div className={styles.infoLabel}>Passport Number:</div>
@@ -48,11 +50,6 @@ function PassportInfo() {
       <div className={styles.infoRow}>
         <div className={styles.infoLabel}>Employment of Spouse:</div>
         <div className={styles.infoValue}>{employmentOfSpouse}</div>
-      </div>
-      <div className={styles.contact__info__right}>
-        <div className={styles.contact__info__edit}>
-          <FontAwesomeIcon icon={faEdit} className={styles.sidebar__icon} />
-        </div>
       </div>
     </div>
   );
