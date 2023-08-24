@@ -1,7 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEdit } from "@fortawesome/free-solid-svg-icons";
-import employeeData from "../../data/EmployeeData";
+import employeeData from "../../data/employee.metadata";
 import styles from "./PassportInfo.module.css";
 
 function PassportInfo() {

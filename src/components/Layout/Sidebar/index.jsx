@@ -12,8 +12,13 @@ import styles from "./Sidebar.module.css";
 import logo from "../../../images/head.jpg";
 
 const Sidebar = () => {
-  const shouldSetActiveClass = (isActive, to) =>
-    isActive && to === window.location.pathname
+    /**
+   * Determines whether to set active class when the nav link item is active
+   * @param isActive Represents the active state for sidebar nav link
+   */
+  
+  const shouldSetActiveClass = (isActive, url) =>
+    isActive && url === window.location.pathname
       ? styles.sidebar__menu__active
       : "";
 

@@ -1,21 +1,20 @@
-.emergencyContactContainer {
-  margin-top: 20px;
+.passportInfoContainer {
   background-color: var(--bg-color);
   border-radius: var(--border-radius);
   flex: 1;
   padding: 20px;
   box-shadow: var(--box-shadow);
   transition: box-shadow 0.3s;
-  padding-bottom: 25px;
   position: relative;
 }
 
-.emergencyContactContainer:hover {
+.passportInfoContainer:hover {
   box-shadow: var(--box-shadow-hover);
 }
 
 .infoEdit {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
 }
 
@@ -23,15 +22,6 @@
   margin-bottom: 20px;
   font-weight: var(--font-bold);
   font-size: 20px;
-}
-
-.editIcon {
-  color: grey;
-  cursor: pointer;
-}
-
-.infoColumn {
-  flex-direction: column;
 }
 
 .infoRow {
@@ -45,18 +35,6 @@
   min-width: 250px;
 }
 
-.infoValue {
-  margin-left: 10px;
-  color: var(--primary-black-4);
-}
-
-.thinLine {
-  height: 1px;
-  width: 100%;
-  background-color: #ccc;
-  margin: 10px 0;
-}
-
 .contact__info__right {
   top: 0;
   right: 0;
@@ -68,5 +46,10 @@
   display: flex;
   align-items: flex-start;
   cursor: pointer;
-  color: var(--primary-black-4)
+  color: var(--primary-black-4);
+}
+
+.infoValue {
+  color: var(--primary-black-4);
+  margin-left: 10px;
 }

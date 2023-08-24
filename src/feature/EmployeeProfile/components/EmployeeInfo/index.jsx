@@ -1,8 +1,12 @@
 import React from "react";
 import styles from "./EmployeeInfo.module.css";
 import head from "../../../../images/head.jpg";
+import employeeData from "../../data/employee.metadata";
 
 function EmployeeInfo() {
+
+  const { name, role } = employeeData.emergencyContacts[0];
+
   return (
     <div className={styles.employee__info}>
       <div className={styles.employee__info__img}>
@@ -10,9 +14,9 @@ function EmployeeInfo() {
       </div>
       <div className={styles.employee__info__details}>
         <div className={styles.employee__info__design}>
-          <h2 className={styles.employee__info__name}>John Doe</h2>
+          <h2 className={styles.employee__info__name}>{name}</h2>
           <h5 className={`${styles.employee__info__position} ${styles.grey}`}>
-            UI/UX Design Team
+            {role}
           </h5>
         </div>
         <h3 className={`${styles.employee__info__job__title} ${styles.grey}`}>

@@ -7,7 +7,7 @@ const employeeData = {
     gender: "Male",
   },
   emergencyContacts: [
-    { name: "John Doe", relationship: "Relative", phone: "9876543210" },
+    { name: "John Doe", relationship: "Relative", phone: "9876543210" ,role: "Web Designer"},
     { name: "Jane Smith", relationship: "Friend", phone: "1234567890" },
   ],
   passportInfo: {

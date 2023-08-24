@@ -3,10 +3,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEdit } from "@fortawesome/free-solid-svg-icons";
 
 import styles from "./EmployeeProfile.module.css";
-import EmployeeInfo from "./component/EmployeeInfo";
-import ContactInfo from "./component/ContactInfo";
-import PassportInfo from "./component/PassportInfo";
-import EmergencyContact from "./component/EmergencyContact";
+import EmployeeInfo from "./components/EmployeeInfo";
+import ContactInfo from "./components/ContactInfo";
+import PassportInfo from "./components/PassportInfo";
+import EmergencyContact from "./components/EmergencyContact";
 
 function EmployeeProfile() {
   return (

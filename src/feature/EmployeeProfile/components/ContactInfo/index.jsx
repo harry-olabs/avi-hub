@@ -1,5 +1,5 @@
 import React from "react";
-import employeeData from "../../data/EmployeeData";
+import employeeData from "../../data/employee.metadata";
 import styles from "./ContactInfo.module.css";
 
 function ContactInfo() {
