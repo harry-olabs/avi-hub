@@ -12,12 +12,15 @@ import styles from "./Sidebar.module.css";
 import logo from "../../../images/head.jpg";
 
 const Sidebar = () => {
-  /**
+    /**
    * Determines whether to set active class when the nav link item is active
    * @param isActive Represents the active state for sidebar nav link
    */
-  const shouldSetActiveClass = (isActive) =>
-    isActive ? styles.sidebar__menu__active : "";
+  
+  const shouldSetActiveClass = (isActive, url) =>
+    isActive && url === window.location.pathname
+      ? styles.sidebar__menu__active
+      : "";
 
   return (
     <div className={styles.sidebar}>
@@ -32,7 +35,10 @@ const Sidebar = () => {
         <NavLink
           to="/dashboard"
           className={({ isActive }) =>
-            `${styles.sidebar__item} ${shouldSetActiveClass(isActive)}`
+            `${styles.sidebar__item} ${shouldSetActiveClass(
+              isActive,
+              "/dashboard"
+            )}`
           }
         >
           <FontAwesomeIcon
@@ -44,16 +50,19 @@ const Sidebar = () => {
         <NavLink
           to="/users"
           className={({ isActive }) =>
-            `${styles.sidebar__item} ${shouldSetActiveClass(isActive)}`
+            `${styles.sidebar__item} ${shouldSetActiveClass(isActive, "/users")}`
           }
         >
           <FontAwesomeIcon icon={faUsers} className={styles.sidebar__icon} />
           <span className={styles.sidebar__text}>Manage Users</span>
         </NavLink>
         <NavLink
-          to="/employee-profile"
+          to="/users/profile"
           className={({ isActive }) =>
-            `${styles.sidebar__item} ${shouldSetActiveClass(isActive)}`
+            `${styles.sidebar__item} ${shouldSetActiveClass(
+              isActive,
+              "/users/profile"
+            )}`
           }
         >
           <FontAwesomeIcon icon={faUser} className={styles.sidebar__icon} />
@@ -62,7 +71,7 @@ const Sidebar = () => {
         <NavLink
           to="/profile"
           className={({ isActive }) =>
-            `${styles.sidebar__item} ${shouldSetActiveClass(isActive)}`
+            `${styles.sidebar__item} ${shouldSetActiveClass(isActive, "/profile")}`
           }
         >
           <FontAwesomeIcon icon={faIdBadge} className={styles.sidebar__icon} />

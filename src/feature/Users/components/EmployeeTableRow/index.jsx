@@ -37,7 +37,7 @@ const EmployeeRow = (props) => {
       <td>
         <div className={styles.actions}>
           <Link
-            to={`/employee-profile`} // Adjust the route as needed
+            to={`/users/profile`} // Adjust the route as needed
             className={`${styles.actionBtn} ${styles.action__view}`}
           >
             <FontAwesomeIcon icon={faEye} /> View

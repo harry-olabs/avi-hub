@@ -1,0 +1,52 @@
+.employee__profile__section1 {
+  border-radius: var(--border-radius);
+  display: flex;
+  padding: 10px;
+  box-shadow: var(--box-shadow);
+  transition: box-shadow 0.3s;
+}
+
+.employee__profile__section1:hover {
+  box-shadow: var(--box-shadow-hover);
+}
+
+.employee__profile__section1__info {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.EmployeeInfo {
+  flex: 1;
+}
+
+.ContactInfo {
+  margin-left: 5px;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.vertical__line {
+  border-left: 3px dotted var(--primary-black-4);
+  margin-right: 15px;
+  height: 120px;
+}
+
+.information__sections {
+  display: flex;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.vertical__contact {
+  display: flex;
+  justify-content: center;
+}
+
+.contact__info__edit {
+  display: flex;
+  align-items: flex-start;
+  cursor: pointer;
+  color: var(--primary-black-4);
+}
