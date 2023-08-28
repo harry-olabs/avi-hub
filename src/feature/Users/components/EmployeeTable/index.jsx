@@ -2,10 +2,10 @@ import React from "react";
 
 import EmployeeRow from "../EmployeeTableRow";
 import styles from "./EmployeeTable.module.css";
-import { useEmployeeContext } from "../../UserContext/EmployeeContext";
+import useEmployeeContext from "../../../../hooks/use-employee";
 
 const EmployeeTable = () => {
-  const { employees } = useEmployeeContext();
+  const { employees, setEmployees } = useEmployeeContext();
 
   return (
     <table className={styles.table}>
@@ -20,7 +20,11 @@ const EmployeeTable = () => {
       </thead>
       <tbody>
         {employees.map((employee) => (
-          <EmployeeRow key={employee.id} {...employee} />
+          <EmployeeRow
+            key={employee.id}
+            {...employee}
+            setEmployees={setEmployees}
+          />
         ))}
       </tbody>
     </table>

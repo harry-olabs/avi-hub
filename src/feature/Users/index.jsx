@@ -5,7 +5,7 @@ import { faSearch, faPlus } from "@fortawesome/free-solid-svg-icons";
 import EmployeeTable from "./components/EmployeeTable";
 import styles from "./Users.module.css";
 
-import { useEmployeeContext } from "./UserContext/EmployeeContext";
+import  useEmployeeContext  from "../../hooks/use-employee";
 
 const Users = () => {
   const { employees } = useEmployeeContext();

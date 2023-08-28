@@ -3,28 +3,15 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye, faEdit, faTrash } from "@fortawesome/free-solid-svg-icons";
 import styles from "./EmployeeTableRow.module.css";
-import { useEmployeeContext } from "../../UserContext/EmployeeContext";
 
-const EmployeeRow = ({
-  id,
-  name,
-  email,
-  avatarUrl,
-  role,
-  creationDate,
-  position,
-}) => {
-  const { employees } = useEmployeeContext();
-
-  const employee = employees.find((emp) => emp.id === id);
-
+const EmployeeRow = (employee, setEmployees) => {
   if (!employee) {
     return null;
   }
 
   return (
     <tr className={styles.row}>
-      <td>
+      <td>  
         <div className={styles.cell}>
           <div className={styles.avatar}>
             <img src={employee.avatarUrl} alt="user-avatar" />

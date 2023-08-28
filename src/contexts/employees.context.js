@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState } from "react";
+import React, { createContext, useState } from "react";
 
 const EmployeeContext = createContext();
 
@@ -76,6 +76,4 @@ export const EmployeeProvider = ({ children }) => {
   );
 };
 
-export const useEmployeeContext = () => {
-  return useContext(EmployeeContext);
-};
+export default EmployeeContext;
