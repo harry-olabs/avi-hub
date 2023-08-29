@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye, faEdit, faTrash } from "@fortawesome/free-solid-svg-icons";
 import styles from "./EmployeeTableRow.module.css";
 
-const EmployeeRow = (employee, setEmployees) => {
+const EmployeeRow = ({employee}) => {
   if (!employee) {
     return null;
   }

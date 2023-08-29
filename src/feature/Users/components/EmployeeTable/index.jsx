@@ -5,7 +5,7 @@ import styles from "./EmployeeTable.module.css";
 import useEmployeeContext from "../../../../hooks/use-employee";
 
 const EmployeeTable = () => {
-  const { employees, setEmployees } = useEmployeeContext();
+  const { employees } = useEmployeeContext();
 
   return (
     <table className={styles.table}>
@@ -22,8 +22,7 @@ const EmployeeTable = () => {
         {employees.map((employee) => (
           <EmployeeRow
             key={employee.id}
-            {...employee}
-            setEmployees={setEmployees}
+            employee={employee}
           />
         ))}
       </tbody>
