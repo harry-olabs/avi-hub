@@ -12,18 +12,18 @@
 }
 
 .container {
-  max-width: 800px;
+  min-width: 500px;
   background-color: var(--bg-color);
-  padding: 80px;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding: 20px;
   border-radius: 10px;
   box-shadow: var(--box-shadow-hover);
   font-size: var(--font-size);
 }
 .container__description {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-size: 17px;
+  display: flex;
+  justify-content: center;
 }
 
 .container:hover {
@@ -32,13 +32,13 @@
 
 .container__title {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 5px;
   color: var(--primary-green);
   font-size: 32px;
 }
 
 .form__group {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .form__label {
@@ -88,14 +88,14 @@
 
 .container__logo img {
   max-width: 200px;
-  height: auto;
+  height: 60px;
   display: block;
   margin: 0 auto;
 }
 
 .register__link {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .register__link__anchor {
