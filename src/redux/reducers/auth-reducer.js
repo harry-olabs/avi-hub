@@ -1,4 +1,4 @@
-import { REGISTRATION_SUCCESS } from "../actionTypes";
+import { REGISTRATION_SUCCESS } from "../types/action-types";
 
 const initialState = {
   user: null,

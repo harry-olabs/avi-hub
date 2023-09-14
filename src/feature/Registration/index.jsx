@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useDispatch } from "react-redux";
-import { registrationSuccess } from "../../redux/actions/authActions";
+import { registrationSuccess } from "../../redux/actions/auth-actions";
 import styles from "./Registration.module.css";
 import { Link, useNavigate } from "react-router-dom";
 import logo from "../../images/sniper.png";
@@ -12,6 +12,16 @@ import {
   validateConfirmPassword,
 } from "../../utils/validation";
 import Cookies from "universal-cookie";
+
+function delay(fn, delayTime) {
+  const timeoutId = setTimeout(() => {
+    fn();
+  }, delayTime);
+
+  return () => {
+    clearTimeout(timeoutId);
+  };
+}
 
 const Registration = () => {
   const [firstName, setFirstName] = useState("");
@@ -30,24 +40,24 @@ const Registration = () => {
 
   useEffect(() => {
     if (registrationFailed) {
-      const timeoutId = setTimeout(() => {
+      const clearRegistrationFailed = delay(() => {
         setRegistrationFailed(false);
       }, 3000);
 
       return () => {
-        clearTimeout(timeoutId);
+        clearRegistrationFailed();
       };
     }
   }, [registrationFailed]);
 
   useEffect(() => {
     if (isEmptyInput) {
-      const timeoutId = setTimeout(() => {
+      const clearEmptyInput = delay(() => {
         setIsEmptyInput(false);
       }, 2000);
 
       return () => {
-        clearTimeout(timeoutId);
+        clearEmptyInput();
       };
     }
   }, [isEmptyInput]);
@@ -121,7 +131,6 @@ const Registration = () => {
 
         const cookies = new Cookies();
         cookies.set("accessToken", accessToken, { path: "/" });
-        console.log(response);
 
         dispatch(registrationSuccess(userCredentials));
         navigate("/dashboard");
@@ -129,7 +138,6 @@ const Registration = () => {
         setRegistrationFailed(true);
       }
     } catch (error) {
-      console.error("Error:", error);
       setRegistrationFailed(true);
     } finally {
       setIsRegistering(false);
