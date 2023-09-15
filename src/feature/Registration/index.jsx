@@ -13,16 +13,6 @@ import {
 } from "../../utils/validation";
 import Cookies from "universal-cookie";
 
-function delay(fn, delayTime) {
-  const timeoutId = setTimeout(() => {
-    fn();
-  }, delayTime);
-
-  return () => {
-    clearTimeout(timeoutId);
-  };
-}
-
 const Registration = () => {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
@@ -40,24 +30,24 @@ const Registration = () => {
 
   useEffect(() => {
     if (registrationFailed) {
-      const clearRegistrationFailed = delay(() => {
+      const timeoutId = setTimeout(() => {
         setRegistrationFailed(false);
       }, 3000);
 
       return () => {
-        clearRegistrationFailed();
+        clearTimeout(timeoutId);
       };
     }
   }, [registrationFailed]);
 
   useEffect(() => {
     if (isEmptyInput) {
-      const clearEmptyInput = delay(() => {
+      const timeoutId = setTimeout(() => {
         setIsEmptyInput(false);
       }, 2000);
 
       return () => {
-        clearEmptyInput();
+        clearTimeout(timeoutId);
       };
     }
   }, [isEmptyInput]);
