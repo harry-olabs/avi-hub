@@ -12,24 +12,59 @@ import {
   validateConfirmPassword,
 } from "../../utils/validation";
 import Cookies from "universal-cookie";
+import useFetch from "../../hooks/use-fetch";
 
 const Registration = () => {
-  const [firstName, setFirstName] = useState("");
-  const [lastName, setLastName] = useState("");
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [confirmPassword, setConfirmPassword] = useState("");
+  const [state, setState] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    password: "",
+    confirmPassword: "",
+  });
+  const { firstName, lastName, email, password, confirmPassword } = state;
+
   const [emailValid, setEmailValid] = useState(true);
   const [passwordValid, setPasswordValid] = useState(true);
   const [confirmPasswordValid, setConfirmPasswordValid] = useState(true);
-  const [isRegistering, setIsRegistering] = useState(false);
   const [registrationFailed, setRegistrationFailed] = useState(false);
   const [isEmptyInput, setIsEmptyInput] = useState(false);
+  const [loadingDots, setLoadingDots] = useState("");
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
+  const { data, error, isLoading, makeRequest } = useFetch(
+    "https://afrihub-backend.onrender.com/api/auth/signup",
+    {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    }
+  );
+
+  const userCredentials = {
+    firstName,
+    lastName,
+    email,
+    password,
+  };
+
   useEffect(() => {
-    if (registrationFailed) {
+    if (data) {
+      const { accessToken } = data;
+
+      const cookies = new Cookies();
+      cookies.set("accessToken", accessToken, { path: "/" });
+
+      dispatch(registrationSuccess(userCredentials));
+      navigate("/dashboard");
+    }
+  }, [data, dispatch, navigate]);
+
+  useEffect(() => {
+    if (error) {
+      setRegistrationFailed(true);
       const timeoutId = setTimeout(() => {
         setRegistrationFailed(false);
       }, 3000);
@@ -38,7 +73,7 @@ const Registration = () => {
         clearTimeout(timeoutId);
       };
     }
-  }, [registrationFailed]);
+  }, [error]);
 
   useEffect(() => {
     if (isEmptyInput) {
@@ -53,26 +88,41 @@ const Registration = () => {
   }, [isEmptyInput]);
 
   const handleFirstNameChange = (value) => {
-    setFirstName(value);
+    setState((prevState) => ({
+      ...prevState,
+      firstName: value,
+    }));
   };
 
   const handleLastNameChange = (value) => {
-    setLastName(value);
+    setState((prevState) => ({
+      ...prevState,
+      lastName: value,
+    }));
   };
 
   const handleEmailChange = (value) => {
-    setEmail(value);
+    setState((prevState) => ({
+      ...prevState,
+      email: value,
+    }));
     setEmailValid(validateEmail(value));
   };
 
   const handlePasswordChange = (value) => {
-    setPassword(value);
+    setState((prevState) => ({
+      ...prevState,
+      password: value,
+    }));
     setPasswordValid(validatePassword(value));
     setConfirmPasswordValid(validateConfirmPassword(value, confirmPassword));
   };
 
   const handleConfirmPasswordChange = (value) => {
-    setConfirmPassword(value);
+    setState((prevState) => ({
+      ...prevState,
+      confirmPassword: value,
+    }));
     setConfirmPasswordValid(validateConfirmPassword(password, value));
   };
 
@@ -94,44 +144,21 @@ const Registration = () => {
       return;
     }
 
-    setIsRegistering(true);
+    const dotsInterval = setInterval(() => {
+      setLoadingDots((prevDots) =>
+        prevDots.length === 3 ? "" : prevDots + "."
+      );
+    }, 500);
 
-    const userCredentials = {
+    await makeRequest({
       firstName,
       lastName,
       email,
       password,
-    };
+    });
 
-    try {
-      const response = await fetch(
-        "https://afrihub-backend.onrender.com/api/auth/signup",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(userCredentials),
-        }
-      );
-
-      if (response) {
-        const data = await response.json();
-        const { accessToken } = data;
-
-        const cookies = new Cookies();
-        cookies.set("accessToken", accessToken, { path: "/" });
-
-        dispatch(registrationSuccess(userCredentials));
-        navigate("/dashboard");
-      } else {
-        setRegistrationFailed(true);
-      }
-    } catch (error) {
-      setRegistrationFailed(true);
-    } finally {
-      setIsRegistering(false);
-    }
+    clearInterval(dotsInterval);
+    setLoadingDots("");
   };
 
   return (
@@ -216,9 +243,9 @@ const Registration = () => {
           </div>
           <div className="form__group">
             <Button
-              text={isRegistering ? "Registering..." : "Register"}
+              text={isLoading ? `Registering${loadingDots}` : "Register"}
               handleClick={handleRegistrationEvent}
-              disabled={isRegistering}
+              disabled={isLoading}
             />
           </div>
         </form>
