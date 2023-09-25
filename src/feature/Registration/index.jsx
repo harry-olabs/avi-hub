@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import jwt_decode from "jwt-decode";
 import { useDispatch } from "react-redux";
 import { registrationSuccess } from "../../redux/actions/auth-actions";
 import styles from "./Registration.module.css";
@@ -15,7 +16,7 @@ import Cookies from "universal-cookie";
 import useFetch from "../../hooks/use-fetch";
 
 const Registration = () => {
-  const [formData , setFormData] = useState({
+  const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
     email: "",
@@ -43,21 +44,16 @@ const Registration = () => {
     }
   );
 
-  const userCredentials = {
-    firstName,
-    lastName,
-    email,
-    password,
-  };
-
   useEffect(() => {
     if (data) {
       const { accessToken } = data;
-
       const cookies = new Cookies();
       cookies.set("accessToken", accessToken, { path: "/" });
 
-      dispatch(registrationSuccess(userCredentials));
+      // Decode the token to obtain the registered user details
+      const decodedData = jwt_decode(accessToken);
+
+      dispatch(registrationSuccess(decodedData));
       navigate("/dashboard");
     }
   }, [data, dispatch, navigate]);
