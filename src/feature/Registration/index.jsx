@@ -15,14 +15,14 @@ import Cookies from "universal-cookie";
 import useFetch from "../../hooks/use-fetch";
 
 const Registration = () => {
-  const [state, setState] = useState({
+  const [formData , setFormData] = useState({
     firstName: "",
     lastName: "",
     email: "",
     password: "",
     confirmPassword: "",
   });
-  const { firstName, lastName, email, password, confirmPassword } = state;
+  const { firstName, lastName, email, password, confirmPassword } = formData;
 
   const [emailValid, setEmailValid] = useState(true);
   const [passwordValid, setPasswordValid] = useState(true);
@@ -88,21 +88,21 @@ const Registration = () => {
   }, [isEmptyInput]);
 
   const handleFirstNameChange = (value) => {
-    setState((prevState) => ({
+    setFormData((prevState) => ({
       ...prevState,
       firstName: value,
     }));
   };
 
   const handleLastNameChange = (value) => {
-    setState((prevState) => ({
+    setFormData((prevState) => ({
       ...prevState,
       lastName: value,
     }));
   };
 
   const handleEmailChange = (value) => {
-    setState((prevState) => ({
+    setFormData((prevState) => ({
       ...prevState,
       email: value,
     }));
@@ -110,7 +110,7 @@ const Registration = () => {
   };
 
   const handlePasswordChange = (value) => {
-    setState((prevState) => ({
+    setFormData((prevState) => ({
       ...prevState,
       password: value,
     }));
@@ -119,7 +119,7 @@ const Registration = () => {
   };
 
   const handleConfirmPasswordChange = (value) => {
-    setState((prevState) => ({
+    setFormData((prevState) => ({
       ...prevState,
       confirmPassword: value,
     }));
@@ -175,7 +175,7 @@ const Registration = () => {
           </div>
         )}
         {isEmptyInput && (
-          <div className="alert alert-warning" role="alert">
+          <div className="alert alert-danger" role="alert">
             Input fields cannot be empty.
           </div>
         )}
