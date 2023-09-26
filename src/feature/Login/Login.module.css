@@ -14,14 +14,12 @@
 }
 
 .container {
-  position: absolute;
-  max-width: 700px;
+  min-width: 400px;
   background-color: var(--bg-color);
-  padding: 80px;
+  padding: 20px;
   border-radius: 10px;
   box-shadow: var(--box-shadow-hover);
-  justify-content: center;
-  align-items: center;
+  font-size: var(--font-size);
 }
 
 .container__logo {
@@ -52,37 +50,6 @@
   font-weight: var(--font-bold);
   color: var(--primary-black-2);
   margin-bottom: 5px;
-}
-
-.form__input[type="email"],
-.form__input[type="password"] {
-  width: 100%;
-  padding: 12px;
-  border-radius: 5px;
-  border: 1px solid var(--primary-black-2);
-  background-color: var(--primary-white-2);
-  transition: background-color 0.3s ease;
-}
-
-.form__input[type="email"]:hover,
-.form__input[type="password"]:hover {
-  background-color: var(--primary-white-2);
-}
-
-.form__submit {
-  background-color: var(--primary-green);
-  color: var(--primary-white);
-  cursor: pointer;
-  border: none;
-  padding: 12px 20px;
-  font-size: var(--font-size);
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-  box-shadow: var(--box-shadow);
-}
-
-.form__submit:hover {
-  background-color: var(--primary-green);
 }
 
 .login__link {

@@ -1,4 +1,4 @@
-import { REGISTRATION_SUCCESS } from "../types/action-types";
+import { REGISTRATION_SUCCESS, LOGIN_SUCCESS  } from "../types/action-types";
 
 const initialState = {
   user: null,
@@ -8,6 +8,7 @@ const initialState = {
 const authReducer = (state = initialState, action) => {
   switch (action.type) {
     case REGISTRATION_SUCCESS:
+    case LOGIN_SUCCESS:
       return {
         ...state,
         user: action.payload,
@@ -16,6 +17,7 @@ const authReducer = (state = initialState, action) => {
     default:
       return state;
   }
+  
 };
 
 export default authReducer;
