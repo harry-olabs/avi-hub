@@ -49,38 +49,6 @@
   font-size: var(--font-size);
 }
 
-.form__input[type="email"],
-.form__input[type="password"] {
-  width: 100%;
-  padding: 12px;
-  border-radius: 5px;
-  border: 1px solid var(--primary-white-2);
-  background-color: var(--primary-white);
-  transition: background-color 0.3s ease;
-  font-size: var(--font-size);
-}
-
-.form__input[type="email"]:hover,
-.form__input[type="password"]:hover {
-  background-color: var(--primary-white-2);
-}
-
-.form__submit {
-  background-color: var(--primary-green);
-  color: var(--primary-white);
-  cursor: pointer;
-  border: none;
-  padding: 12px 20px;
-  font-size: var(--font-size);
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-  box-shadow: var(--box-shadow);
-}
-
-.form__submit:hover {
-  background-color: var(--primary-green);
-}
-
 .container__logo {
   text-align: center;
   margin-bottom: 20px;
